@@ -1,3 +1,23 @@
 .container {
   text-align: center;
+  margin-bottom: 2em;
+}
+
+
+#socialbuttons {
+  height: 20px;
+}
+
+#socialbuttons a {
+  color: transparent;
+}
+
+#socialbuttons a img {
+  width: 30px;
+  height: 30px;
+}
+
+#socialbuttons span.spacer {
+  display: inline-block;
+  width: 10px;
 }
