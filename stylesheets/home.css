@@ -35,8 +35,14 @@ header .btn-primary {
   border: 1px solid black;
 }
 
-main {
-  width: 100%;
+.modal {
+  color: black;
+}
+
+/* override bootstrap */
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+  color: black;
 }
 
 main button,
@@ -104,11 +110,34 @@ em {
     height: 668px;
   }
   
+  section#products {
+    height: 700px;
+  }
+  
+  section#protein {
+    height: 2482px;
+  }
+  
+  section#jointhealth {
+    height: 2290px;
+  }
+  
+  section#about {
+    height: 724px;
+  }
+  
+  section#join {
+    height: 634px;
+  }
+  
+  section#contact {
+    height: 504px;
+  }
+  
   /* From http://getbootstrap.com/examples/carousel/carousel.css */
   /* Carousel base class */
   .carousel {
     height: 668px;
-    margin-bottom: 60px;
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
