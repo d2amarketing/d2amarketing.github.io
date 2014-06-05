@@ -57,42 +57,42 @@ section#slides {
 }
 
 section#products {
-  background-image: url(../backgrounds/products-background.png);
+  background-image: url(../images/backgrounds/products-background.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 section#protein {
-  background-image: url(../backgrounds/protein-background.jpg);
+  background-image: url(../images/backgrounds/protein-background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 section#jointhealth {
-  background-image: url(../backgrounds/joint-health-background.jpg);
+  background-image: url(../images/backgrounds/joint-health-background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 section#about {
-  background-image: url(../backgrounds/about-d2a-background.jpg);
+  background-image: url(../images/backgrounds/about-d2a-background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 section#join {
-  background-image: url(../backgrounds/join-d2a-background.jpg);
+  background-image: url(../images/backgrounds/join-d2a-background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 section#contact {
-  background-image: url(../backgrounds/contact-us-background.jpg);
+  background-image: url(../images/backgrounds/contact-us-background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
