@@ -23,7 +23,7 @@
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar">
 
 <header class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -34,11 +34,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img id="logo" src="images/d2a-logo-color.png" alt="D2A (Direct 2 Athlete)"></a>
+      <a class="navbar-brand" href="#"><img src="images/d2a-logo-color.png" alt="D2A (Direct 2 Athlete)"></a>
     </div>
   
     <nav class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav pages">
         <li><a href="#products">Products</a></li>
         <li><a href="#about">About D2A</a></li>
         <li><a href="#join">Join Our Team</a></li>
@@ -46,15 +46,31 @@
       </ul>
 
       <div class="navbar-right">
-        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#d2anewsignup">
-          Sign-up for D2A News
+        <button class="btn btn-default" data-toggle="modal" data-target="#d2anewsignup">
+          <span>Sign-up for D2A News</span>
+          <span class="glyphicon glyphicon-envelope"></span>
         </button>
 
-        <ul class="nav navbar-nav">
-          <li><a href="https://twitter.com/d2amarketing">Tw</a></li>
-          <li><a href="https://www.facebook.com/d2amarketing">Fb</a></li>
-          <li><a href="http://instagram.com/direct2athlete">Ig</a></li>
-          <li><a href="http://www.linkedin.com/company/5090894">Li</a></li>
+        <ul class="nav navbar-nav social-buttons">
+          <!-- Twitter -->
+          <li>
+            <a href="https://twitter.com/d2amarketing" class="social-button"><img src="images/twitter.png" alt="Twitter"></a>
+          </li>
+          
+          <!-- Facebook -->
+          <li>
+            <a href="https://www.facebook.com/d2amarketing" class="social-button"><img src="images/facebook.png" alt="Facebook"></a>
+          </li>
+          
+          <!-- Instagram -->
+          <li>
+            <a href="http://instagram.com/direct2athlete?ref=badge" class="ig-b- ig-b-32 social-button"><img src="//badges.instagram.com/static/images/ig-badge-32.png" alt="Instagram" /></a>
+        </li>
+          
+          <!-- LinkedIn -->
+          <li>
+            <a href="http://www.linkedin.com/company/5090894" class="social-button"><img src="images/linkedin.png" alt="LinkedIn"></a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -75,7 +91,7 @@
           <div class="carousel-caption">
             <h1>D2A: Direct to Athlete</h1>
             <p>Made by and for those who need and deserve the best.</p>
-            <p><a class="btn btn-lg btn-primary" href="#about">LEARN MORE</a></button>
+            <p><a class="btn btn-lg btn-default" href="#about">LEARN MORE</a></button>
           </div>
         </div>
       </div>
@@ -85,7 +101,7 @@
           <div class="carousel-caption">
             <h1>Superior Formulas</h1>
             <p>Seriously good ingredients inside, results guaranteed.</p>
-            <p><a class="btn btn-lg btn-primary" href="#products">LEARN MORE</a></button>
+            <p><a class="btn btn-lg btn-default" href="#products">LEARN MORE</a></button>
           </div>
         </div>
       </div>
@@ -95,7 +111,7 @@
           <div class="carousel-caption">
             <h1>Join D2A</h1>
             <p>Trainers and fitness professionals, join our team.</p>
-            <p><a class="btn btn-lg btn-primary" href="#join">LEARN MORE</a></button>
+            <p><a class="btn btn-lg btn-default" href="#join">LEARN MORE</a></button>
           </div>
         </div>
       </div>
@@ -104,200 +120,275 @@
     <a class="right carousel-control" href="#slides" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
   </section>
   
-  <section id="products" class="container">
-    <h2>Products</h2>
-    
-    <p>Developed with the highest quality, research-supported ingredients. Boost your health. Increase your performance. Get better results.</p>
-    
-    <div>
-      <h3>Advanced Performance PROTEIN</h3>
-      <p>BOOST, PERFORM, ENDURE & RECOVER</p>
-      <!--
-      gluten free
-      non gmo
-      soy free
-      grass fed
-      100% pure
-      -->
-    </div>
-    
-    <div>
-      <h3>Advanced Performance JOINT HEALTH</h3>
-      <p>REDUCE, TARGET, PREVENT & PERFORM</p>
-      <!--
-      gluten free
-      non gmo
-      soy free
-      -->
-    </div>
-  </section>
-  
-  <section id="protein" class="container">
-    <h2>Advanced<br>Performance<br>PROTEIN</h2>
-    <p>BOOST, PERFORM, ENDURE, RECOVER</p>
-    <!-- gluten free, non gmo, soy free, grass fed, 100% pure -->
-    <ul>
-      <li>22 grams of pure protein whey concentrate.</li>
-      <li>Enhanced with revolutionary Chocamine®, a potent cocoa extract.</li>
-      <li>Naturally increases metabolism, lean muscle and recovery.</li>
-      <li>Promotes better acuity, stamina and endurance.</li>
-    </ul>
-    
-    <button>Overview</button>
-    <button>Nutrition Information</button>
-    <button>Usage Directions</button>
-    
-    <h3>Advanced<br>Performance<br>PROTEIN OVERVIEW</h3>
-    <h4>Add more power to your workouts</h4>
-    <p>Can a protein formula increase your mental power as much as your physical performance? This one can.</p>
-    <p>In-addition to its pure whey concentrate, we enriched <em>Advanced Protein</em> with revolutionary <em>Chocamine®</em>. <em>Clinically tested and completely natural, Chocamine®</em> is comprised of the most powerful properties found in chocolate with studies showing it can <em>increase mental acuity, concentration and stamina.</em></p>
-    <p>As pre or post-workout fuel, a healthy snack or anything in-between, enjoy it daily to see and feel the Advanced Protein difference.</p>
-    
-    <div class="row">
-      <div class="col-md-4">
-        <h4>Boost metabolism for a leaner body</h4>
-        <p>What’s the fat-burning secret to eating more protein? Unlike carbs and fat, when protein is consumed the body undergoes a <em>thermogenic process to breakdown, digest and utilize the protein</em> rather than store it as fat. By including protein regularly, your metabolic rate gets a healthy boost which equals a leaner body over time.</p>
+  <section id="products">
+    <div class="container">
+      <div class="row product-list-heading">
+        <div class="col-md-2">
+          <h2>Products</h2>
+        </div>
+        <div class="col-md-6">
+          <p>Developed with the highest quality, research-supported ingredients. Boost your health. Increase your performance. Get better results.</p>
+        </div>
       </div>
       
-      <div class="col-md-4">
-        <h4>Build and Maintain Lean Muscle</h4>
-        <p>A stronger body without bulk? Precisely what a smart exercise plan plus a protein-rich diet can lead to.  What’s more, studies show whey protein concentrate makes an optimum source as it’s easily absorbed and helps feed the muscles the <em>most essential building blocks for proper formation, repair and recovery.</em></p>
+      <div class="row product-list-container">
+        <div id="product-list-protein" class="col-md-6">
+          <h3 class="product-name">Advanced Performance<br><span>PROTEIN</span></h3>
+          <p class="product-purpose">BOOST, PERFORM, ENDURE & RECOVER</p>
+          <!--
+          gluten free
+          non gmo
+          soy free
+          grass fed
+          100% pure
+          -->
+        </div>
+        
+        <div id="product-list-jointhealth" class="col-md-6">
+          <h3 class="product-name">Advanced Performance<br><span>JOINT HEALTH</span></h3>
+          <p class="product-purpose">REDUCE, TARGET, PREVENT & PERFORM</p>
+          <!--
+          gluten free
+          non gmo
+          soy free
+          -->
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="protein">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h2>Advanced<br>Performance<br><span>PROTEIN</span></h2>
+        </div>
+        <div class="col-md-9">
+          <p>BOOST, PERFORM, ENDURE, RECOVER</p>
+          <!-- gluten free, non gmo, soy free, grass fed, 100% pure -->
+        </div>
       </div>
       
-      <div class="col-md-4">
-        <h4>Pure whey protein. Rich in all essential BCAAs.</h4>
-        <p>Derived from <em>hormone-free, grass-fed, US fed cows,</em> our <em>micro-filtering process</em> ensures the fat and lactose are removed for the most absorbable form of whey protein.</p>
-        <p>What’s more, our formula provides over <em>15 BCAAs</em> including 9 of the essentials.</p>
-      </div>
-    </div>
-    
-    <h3>Advanced<br>Performance<br>PROTEIN NUTRITION</h3>
-    <p>Contains no gluten, wheat, soy, corn, artificial colours, flavours, sweeteners or preservatives. Store in a cool, dry place.</p>
-    <p>Manufactured in Canada.<br>Chocamine® is a registered trademark of RFI LLC.</p>
-    
-    <h3>Advanced<br>Performance<br>PROTEIN USAGE DIRECTIONS</h3>
-    <p>Depending on your health and fitness goals, enjoy 1-3 servings daily.  Mix 1 scoop (33 grams) into 1 cup of any liquid or smoothies.  Can also be added to foods such as yogurt or oatmeal with no blender required.</p>
-  </section>
-  
-  <section id="jointhealth" class="container">
-    <h2>Advanced<br>Performance<br>JOINT HEALTH</h2>
-    <p>TARGET, REDUCE, PREVENT, PERFORM</p>
-    <!-- gluten free, non gmo, soy free -->
-    <ul>
-      <li>Targets joint pain, stiffness and inflammation.</li>
-      <li>Contains sports-specific Protease Enzyme blend, Bromelain and MicroActive® Curcumin.</li>
-      <li>Provides up to 7x better absorption.</li>
-      <li>Delivers antioxidant and anti-inflammatory support all-in-one.</li>
-    </ul>
-    
-    <button>Overview</button>
-    <button>Nutrition Information</button>
-    <button>Usage Directions</button>
-    
-    <h3>Advanced<br>Performance<br>JOINT HEALTH OVERVIEW</h3>
-
-    <div class="row">
-      <div class="col-md-4">
-        <h4>Keep your body, muscles and joints moving</h4>
-        <p>Whether you’re suffering from pain and stiffness caused by over-training, arthritis or natural aging, <em>there’s no better formula</em> to address your issues safely and naturally.</p>
-        <p>Developed based on the latest research, <em>Advanced Performance Joint Health</em> not only targets pain and inflammation, it helps rebuild joint cartilage, the foundation for healthy, active living.</p>
-      </div>
-  
-      <div class="col-md-4">
-        <h4>A powerful synergy of nature’s best</h4>
-        <p>Developed based on leading research, this formula immediately goes to work due to its sports-specific <em>Protease Enzyme</em> blend with Bromelain to target pain and inflammation. There’s also <em>Maca Root</em> – a powerful superfood to protect cells against oxidative stress; <em>MicroActive® Curcumin</em>, a highly specialized form of Curcumin  as well as <em>Boswellin extract</em>, an Ayurvedic herbal extract to ease swelling, while improving blood flow to the joints.</p>
+      <ul>
+        <li>22 grams of pure protein whey concentrate.</li>
+        <li>Enhanced with revolutionary Chocamine®, a potent cocoa extract.</li>
+        <li>Naturally increases metabolism, lean muscle and recovery.</li>
+        <li>Promotes better acuity, stamina and endurance.</li>
+      </ul>
+      
+      <div class="row product-detail-links">
+        <div class="col-md-4">
+          <a href="#protein-overview" class="btn btn-lg">Overview</a>
+        </div>
+        <div class="col-md-4">
+          <a href="#protein-nutrition" class="btn btn-lg">Nutrition Information</a>
+        </div>
+        <div class="col-md-4">
+          <a href="#protein-usage" class="btn btn-lg">Usage Directions</a>
+        </div>
       </div>
       
-      <div class="col-md-4">
-        <h4>Experience results in days, with a stronger future ahead</h4>
-        <p><em>When taken daily, benefits include:</em></p>
-        <ul>
-          <li>Relieves joint pain, stress and inflammation.</li>
-          <li>Helps build and protect essential joint cartilage over time.</li>
-          <li>Provides noticeable results with 7x better absorption.</li>
-          <li>Promotes sustained usage by the body.</li>
-          <li>Reduces oxidative stress associated with training and over-use.</li>
-        </ul>
+      <h3 id="protein-overview">Advanced<br>Performance<br><span>PROTEIN OVERVIEW</span></h3>
+      <h4>Add more power to your workouts</h4>
+      <p>Can a protein formula increase your mental power as much as your physical performance? This one can.</p>
+      <p>In-addition to its pure whey concentrate, we enriched <em>Advanced Protein</em> with revolutionary <em>Chocamine®</em>. <em>Clinically tested and completely natural, Chocamine®</em> is comprised of the most powerful properties found in chocolate with studies showing it can <em>increase mental acuity, concentration and stamina.</em></p>
+      <p>As pre or post-workout fuel, a healthy snack or anything in-between, enjoy it daily to see and feel the Advanced Protein difference.</p>
+      
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Boost metabolism for a leaner body</h4>
+          <p>What’s the fat-burning secret to eating more protein? Unlike carbs and fat, when protein is consumed the body undergoes a <em>thermogenic process to breakdown, digest and utilize the protein</em> rather than store it as fat. By including protein regularly, your metabolic rate gets a healthy boost which equals a leaner body over time.</p>
+        </div>
+        
+        <div class="col-md-4">
+          <h4>Build and Maintain Lean Muscle</h4>
+          <p>A stronger body without bulk? Precisely what a smart exercise plan plus a protein-rich diet can lead to.  What’s more, studies show whey protein concentrate makes an optimum source as it’s easily absorbed and helps feed the muscles the <em>most essential building blocks for proper formation, repair and recovery.</em></p>
+        </div>
+        
+        <div class="col-md-4">
+          <h4>Pure whey protein. Rich in all essential BCAAs.</h4>
+          <p>Derived from <em>hormone-free, grass-fed, US fed cows,</em> our <em>micro-filtering process</em> ensures the fat and lactose are removed for the most absorbable form of whey protein.</p>
+          <p>What’s more, our formula provides over <em>15 BCAAs</em> including 9 of the essentials.</p>
+        </div>
+      </div>
+      
+      <h3 id="protein-nutrition">Advanced<br>Performance<br>PROTEIN NUTRITION</h3>
+      <p>Contains no gluten, wheat, soy, corn, artificial colours, flavours, sweeteners or preservatives. Store in a cool, dry place.</p>
+      <p>Manufactured in Canada.<br>Chocamine® is a registered trademark of RFI LLC.</p>
+      
+      <h3 id="protein-usage">Advanced<br>Performance<br>PROTEIN USAGE DIRECTIONS</h3>
+      <p>Depending on your health and fitness goals, enjoy 1-3 servings daily.  Mix 1 scoop (33 grams) into 1 cup of any liquid or smoothies.  Can also be added to foods such as yogurt or oatmeal with no blender required.</p>
+    </div>
+  </section>
+  
+  <section id="jointhealth">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h2>Advanced<br>Performance<br>JOINT HEALTH</h2>
+        </div>
+        <div class="col-md-9">
+          <p>TARGET, REDUCE, PREVENT, PERFORM</p>
+          <!-- gluten free, non gmo, soy free -->
+        </div>
+      </div>
+      
+      <ul>
+        <li>Targets joint pain, stiffness and inflammation.</li>
+        <li>Contains sports-specific Protease Enzyme blend, Bromelain and MicroActive® Curcumin.</li>
+        <li>Provides up to 7x better absorption.</li>
+        <li>Delivers antioxidant and anti-inflammatory support all-in-one.</li>
+      </ul>
+      
+      <div class="row product-detail-links">
+        <div class="col-md-4">
+          <a href="#jointhealth-overview" class="btn btn-lg">Overview</a>
+        </div>
+        <div class="col-md-4">
+          <a href="#jointhealth-nutrition" class="btn btn-lg">Nutrition Information</a>
+        </div>
+        <div class="col-md-4">
+          <a href="#jointhealth-usage" class="btn btn-lg">Usage Directions</a>
+        </div>
+      </div>
+      
+      <h3 id="jointhealth-overview">Advanced<br>Performance<br>JOINT HEALTH OVERVIEW</h3>
+  
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Keep your body, muscles and joints moving</h4>
+          <p>Whether you’re suffering from pain and stiffness caused by over-training, arthritis or natural aging, <em>there’s no better formula</em> to address your issues safely and naturally.</p>
+          <p>Developed based on the latest research, <em>Advanced Performance Joint Health</em> not only targets pain and inflammation, it helps rebuild joint cartilage, the foundation for healthy, active living.</p>
+        </div>
+    
+        <div class="col-md-4">
+          <h4>A powerful synergy of nature’s best</h4>
+          <p>Developed based on leading research, this formula immediately goes to work due to its sports-specific <em>Protease Enzyme</em> blend with Bromelain to target pain and inflammation. There’s also <em>Maca Root</em> – a powerful superfood to protect cells against oxidative stress; <em>MicroActive® Curcumin</em>, a highly specialized form of Curcumin  as well as <em>Boswellin extract</em>, an Ayurvedic herbal extract to ease swelling, while improving blood flow to the joints.</p>
+        </div>
+        
+        <div class="col-md-4">
+          <h4>Experience results in days, with a stronger future ahead</h4>
+          <p><em>When taken daily, benefits include:</em></p>
+          <ul>
+            <li>Relieves joint pain, stress and inflammation.</li>
+            <li>Helps build and protect essential joint cartilage over time.</li>
+            <li>Provides noticeable results with 7x better absorption.</li>
+            <li>Promotes sustained usage by the body.</li>
+            <li>Reduces oxidative stress associated with training and over-use.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <h3 id="jointhealth-nutrition">Advanced<br>Performance<br>JOINT HEALTH NUTRITION</h3>
+      <p>Contains no gluten, dairy, wheat, soy, corn, artificial colours, flavours, sweeteners or preservatives. Store in a cool, dry place.</p>
+      <p>Manufactured in Canada.<br>Microactive Curcumin® is a registered trademark of BioActives, LLC.</p>
+      
+      <h3 id="jointhealth-usage">Advanced<br>Performance<br>JOINT HEALTH USAGE</h3>
+      <p>To reduce, treat and prevent pain and inflammation associated with over-use, arthritis and natural aging, take two (2) capsules daily – ideally before meals.</p>
+    </div>
+  </section>
+  
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <h2>About D2A</h2>
+        </div>
+        <div class="col-md-7">
+          <p>We’re a team of professionals with expertise in sports, nutrition, formulation and technology.  Together, we’re a united force with a mission to provide the highest quality nutritional formulas for maximum health and sports performance.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>But unlike our counterparts, you won’t find our products in mass retail stores. That’s simply not our game.</p>
+          <p>Our focus is on closing the gap and putting our products directly into the hands of those who need and deserve them most.</p>
+          <p>Hence why our formulas are offered exclusively via certified Health and Fitness professionals as well as select fitness studios and gyms.</p>
+          <p>Last, by tapping into our digital expertise and utilizing our custom D2A platform, we're able to provide a seamless ordering and fulfillment experience every time.</p>
+          <p><em>Hence our name D2A: Direct to Athlete.</em><br>Direct to those who need and deserve the best nutritional support for their health and performance.</p>
+          <p><a href="#join" class="btn">Learn more about joining the D2A team.</a></p>
+        </div>
       </div>
     </div>
-    
-    <h3>Advanced<br>Performance<br>JOINT HEALTH NUTRITION</h3>
-    <p>Contains no gluten, dairy, wheat, soy, corn, artificial colours, flavours, sweeteners or preservatives. Store in a cool, dry place.</p>
-    <p>Manufactured in Canada.<br>Microactive Curcumin® is a registered trademark of BioActives, LLC.</p>
-    
-    <h3>Advanced<br>Performance<br>JOINT HEALTH USAGE</h3>
-    <p>To reduce, treat and prevent pain and inflammation associated with over-use, arthritis and natural aging, take two (2) capsules daily – ideally before meals.</p>
   </section>
   
-  <section id="about" class="container">
-    <h2>About D2A</h2>
-    <p>We’re a team of professionals with expertise in sports, nutrition, formulation and technology.  Together, we’re a united force with a mission to provide the highest quality nutritional formulas for maximum health and sports performance.</p>
-    <p>But unlike our counterparts, you won’t find our products in mass retail stores. That’s simply not our game.</p>
-    <p>Our focus is on closing the gap and putting our products directly into the hands of those who need and deserve them most.</p>
-    <p>Hence why our formulas are offered exclusively via certified Health and Fitness professionals as well as select fitness studios and gyms.</p>
-    <p>Last, by tapping into our digital expertise and utilizing our custom D2A platform, we're able to provide a seamless ordering and fulfillment experience every time.</p>
-    <p><em>Hence our name D2A: Direct to Athlete.</em><br>Direct to those who need and deserve the best nutritional support for their health and performance.</p>
-    <p><button>click here</button>To learn more about joining the D2A team.</p>
-  </section>
+  <section id="join">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <h2>Join D2A</h2>
+        </div>
+        <div class="col-md-10">
+          <p>Are you a certified personal trainer, gym owner or Fitness specialist with a passion for results-driven sports supplements?</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <p><em>If so, you can join the D2A Team to begin offering our formulas to your clients and friends.</em></p>
+          <p>We provide all the tools to get you started with no costs or fees to join.</p>
+          <p>To learn more, please complete the following:</p>
   
-  <section id="join" class="container">
-    <h2>Join D2A</h2>
-    <p>Are you a certified personal trainer, gym owner or Fitness specialist with a passion for results-driven sports supplements?</p>
-    <p><em>If so, you can join the D2A Team to begin offering our formulas to your clients and friends.</em></p>
-    <p>We provide all the tools to get you started with no costs or fees to join.</p>
-    <p>To learn more, please complete the following:</p>
-
-    <!-- Begin MailChimp Signup Form -->
-    <div id="mc_embed_signup">
-      <form action="http://d-2a.us3.list-manage.com/subscribe/post?u=15771c1be9dd09bf01af1478f&amp;id=9b94d8b9bb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      	<h2>Subscribe to our mailing list</h2>
-      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-      <div class="mc-field-group">
-      	<label for="mce-FNAME">First Name  <span class="asterisk">*</span> </label>
-      	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup">
+            <form action="http://d-2a.us3.list-manage.com/subscribe/post?u=15771c1be9dd09bf01af1478f&amp;id=9b94d8b9bb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+            <div class="mc-field-group">
+            	<label for="mce-FNAME">First Name  <span class="asterisk">*</span> </label>
+            	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+            </div>
+            <div class="mc-field-group">
+            	<label for="mce-LNAME">Last Name  <span class="asterisk">*</span> </label>
+            	<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+            </div>
+            <div class="mc-field-group">
+            	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> </label>
+            	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+            <div class="mc-field-group">
+            	<label for="mce-MMERGE8">Expertise in Fitness  <span class="asterisk">*</span> </label>
+            	<input type="text" value="" name="MMERGE8" class="required" id="mce-MMERGE8">
+            </div>
+            	<div id="mce-responses" class="clear">
+            		<div class="response" id="mce-error-response" style="display:none"></div>
+            		<div class="response" id="mce-success-response" style="display:none"></div>
+            	</div>
+            	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_15771c1be9dd09bf01af1478f_9b94d8b9bb" tabindex="-1" value=""></div>
+              <div class="clear"><button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">Subscribe</button></div>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="mc-field-group">
-      	<label for="mce-LNAME">Last Name  <span class="asterisk">*</span> </label>
-      	<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
-      </div>
-      <div class="mc-field-group">
-      	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> </label>
-      	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-      </div>
-      <div class="mc-field-group">
-      	<label for="mce-MMERGE8">Expertise in Fitness  <span class="asterisk">*</span> </label>
-      	<input type="text" value="" name="MMERGE8" class="required" id="mce-MMERGE8">
-      </div>
-      	<div id="mce-responses" class="clear">
-      		<div class="response" id="mce-error-response" style="display:none"></div>
-      		<div class="response" id="mce-success-response" style="display:none"></div>
-      	</div>
-      	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;"><input type="text" name="b_15771c1be9dd09bf01af1478f_9b94d8b9bb" tabindex="-1" value=""></div>
-        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-      </form>
+      <!--End mc_embed_signup-->
     </div>
-    <!--End mc_embed_signup-->
   </section>
   
-  <section id="contact" class="container">
-    <h2>Contact Us</h2>
-    <p>We’re here to answer any questions, field your comments and more.</p>
-    
-    <div class="row">
-      <div class="col-md-4">
-        <img src="images/d2a-logo-white.png" alt="D2A | Direct 2 Athlete">
-        <address>
-          D2A Nutritional Products Inc<br>
-          42 Industrial St<br>
-          Toronto, ON<br>
-          M4G 1Y9
-        </address>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="col-md-10">
+          <p>We’re here to answer any questions, field your comments and more.</p>
+        </div>
       </div>
-      <div class="col-md-8">
-        <h4>Here’s how to reach us:</h4>
-        <p><em>General Inquiries</em><br>info@D-2A.com</p>
-        <p><em>Sales Inquiries</em><br>sales@D-2A.com</p>
+      
+      <div class="row">
+        <div class="col-md-2">
+          <img src="images/d2a-logo-white.png" alt="D2A | Direct 2 Athlete">
+          <address>
+            D2A Nutritional Products Inc<br>
+            42 Industrial St<br>
+            Toronto, ON<br>
+            M4G 1Y9
+          </address>
+        </div>
+        <div class="col-md-10">
+          <h4>Here’s how to reach us:</h4>
+          <p><em>General Inquiries</em><br>info@D-2A.com</p>
+          <p><em>Sales Inquiries</em><br>sales@D-2A.com</p>
+        </div>
       </div>
     </div>
   </section>
@@ -314,7 +405,7 @@
       <form action="http://d-2a.us3.list-manage1.com/subscribe/post?u=15771c1be9dd09bf01af1478f&amp;id=2df5c8ab67" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="d2anewsignuplabel">Sign up for D2A News</h4>
+          <h4 class="modal-title" id="d2anewsignuplabel">Sign-up for D2A News</h4>
         </div>
         <div class="modal-body">
           <div id="mc_embed_signup">
@@ -343,7 +434,7 @@
         <div class="modal-footer">
           <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
           <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+          <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">Subscribe</button>
         </div>
       </form>
     </div>
