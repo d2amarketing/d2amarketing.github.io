@@ -15,7 +15,7 @@ header {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Anton', sans-serif;
   margin-top: 0; /* override bootstrap */
-  padding-top: 20px; /* override bootstrap */
+  padding-top: 0px; /* override bootstrap */
 }
 
 p {
@@ -149,56 +149,63 @@ main .btn {
 
 .product-detail-links {
   text-align: center;
+  padding-bottom: 30px;
 }
 
 main {
   margin-top: 50px;
 }
 
+.d2a-chevrons {
+  background-image: url(../images/chevrons.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 49px;
+  padding: 8px 0;
+}
+
 section#slides {
-  background-color: blue;
 }
 
 section#products {
-  background-image: url(../images/backgrounds/products-background.jpg);
+  background-image: url(../images/backgrounds/products-background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
 }
 
 section#protein {
-  background-image: url(../images/backgrounds/protein-background.jpg);
+  background-image: url(../images/backgrounds/protein-background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+
 }
 
 section#jointhealth {
-  background-image: url(../images/backgrounds/joint-health-background.jpg);
+  background-image: url(../images/backgrounds/joint-health-background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
 }
 
 section#about {
-  background-image: url(../images/backgrounds/about-d2a-background.jpg);
+  background-image: url(../images/backgrounds/about-d2a-background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
 }
 
 section#join {
-  background-image: url(../images/backgrounds/join-d2a-background.jpg);
+  background-image: url(../images/backgrounds/join-d2a-background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
 }
 
 section#contact {
-  background-image: url(../images/backgrounds/contact-us-background.jpg);
+  background-image: url(../images/backgrounds/contact-us-background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+}
+
+section#protein h4 {
+  padding-top: 40px;
 }
 
 section#contact address {
@@ -216,6 +223,30 @@ em {
 
 /* desktop and tablet layout */
 @media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  h2>span {
+    font-size: 78px;
+  }
+
+  h3 {
+    font-size: 38px;
+  }
+
+  h3>span {
+    font-size: 63px;
+  }
+
+  h4 {
+    font-size: 19px;
+  }
+
   header {
     height: 128px;
   }
@@ -234,11 +265,11 @@ em {
     margin-top: 78px;
     /* padding-top: 15px; comes from navbar-nav>li>a */
   }
-  
+
   .navbar-right button {
     margin-top: 15px;
   }
-  
+
   .social-buttons {
     padding-top: 27px;
   }
@@ -246,35 +277,54 @@ em {
   main {
     margin-top: 128px;
   }
-  
+
   section#slides {
     height: 668px;
   }
-  
+
   section#products {
     height: 700px;
+    background-image: url(../images/backgrounds/products-background.jpg);
+    background-size: cover;
+    padding-top: 36px;
   }
-  
+
   section#protein {
     height: 2482px;
+    background-image: url(../images/backgrounds/protein-background.jpg);
+    background-size: cover;
+    padding-top: 32px;
+
   }
-  
+
   section#jointhealth {
     height: 2290px;
+    background-image: url(../images/backgrounds/joint-health-background.jpg);
+    background-size: cover;
+    padding-top: 40px;
   }
-  
+
   section#about {
     height: 724px;
+    background-image: url(../images/backgrounds/about-d2a-background.jpg);
+    background-size: cover;
+    padding-top: 26px;
   }
-  
+
   section#join {
     height: 634px;
+    background-image: url(../images/backgrounds/join-d2a-background.jpg);
+    background-size: cover;
+    padding-top: 36px;
   }
-  
+
   section#contact {
     height: 504px;
+    background-image: url(../images/backgrounds/contact-us-background.jpg);
+    background-size: cover;
+    padding-top: 40px;
   }
-  
+
   /* From http://getbootstrap.com/examples/carousel/carousel.css */
   /* Carousel base class */
   .carousel {
@@ -285,7 +335,7 @@ em {
     bottom: 40%;
     z-index: 10;
   }
-  
+
   /* Declare heights because of positioning of img element */
   .carousel .item {
     height: 668px;
@@ -297,11 +347,7 @@ em {
     min-width: 100%;
     height: 668px;
   }
-  
-  .product-list-heading {
-    padding-top: 36px;
-  }
-  
+
   .product-list-container {
     padding-top: 240px;
   }
