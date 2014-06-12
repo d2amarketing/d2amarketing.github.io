@@ -53,6 +53,10 @@ header .btn {
   height: 31px;
 }
 
+.navbar-right .social-buttons li {
+  display: inline-block;
+}
+
 nav {
   text-transform: uppercase;
 }
@@ -137,6 +141,7 @@ main .btn {
   width: 276px;
   height: 318px;
   padding-left: 120px;
+  margin: 0 auto;
 }
 
 #product-list-jointhealth {
@@ -145,11 +150,21 @@ main .btn {
   width: 276px;
   height: 318px;
   padding-left: 120px;
+  margin: 0 auto;
 }
 
 .product-detail-links {
   text-align: center;
   padding-bottom: 30px;
+}
+
+.product-detail-links .btn {
+  background-image: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  padding-left: 60px;
+  width: 250px;
+  text-align: left;
 }
 
 main {
@@ -162,6 +177,14 @@ main {
   background-position: center center;
   height: 49px;
   padding: 8px 0;
+}
+
+#d2a-protein-bottle {
+  width: 100%;
+}
+
+#d2a-jointhealth-bottle {
+  width: 100%;
 }
 
 section#slides {
@@ -279,18 +302,18 @@ em {
   }
 
   section#slides {
-    height: 668px;
+    height: 527px;
   }
 
   section#products {
-    height: 700px;
+    height: 522px;
     background-image: url(../images/backgrounds/products-background.jpg);
     background-size: cover;
     padding-top: 36px;
   }
 
   section#protein {
-    height: 2482px;
+    height: 1951px;
     background-image: url(../images/backgrounds/protein-background.jpg);
     background-size: cover;
     padding-top: 32px;
@@ -298,58 +321,69 @@ em {
   }
 
   section#jointhealth {
-    height: 2290px;
+    height: 1800px;
     background-image: url(../images/backgrounds/joint-health-background.jpg);
     background-size: cover;
     padding-top: 40px;
   }
 
   section#about {
-    height: 724px;
+    height: 537px;
     background-image: url(../images/backgrounds/about-d2a-background.jpg);
     background-size: cover;
     padding-top: 26px;
   }
 
   section#join {
-    height: 634px;
+    height: 568px;
     background-image: url(../images/backgrounds/join-d2a-background.jpg);
     background-size: cover;
     padding-top: 36px;
   }
 
   section#contact {
-    height: 504px;
+    height: 398px;
     background-image: url(../images/backgrounds/contact-us-background.jpg);
     background-size: cover;
     padding-top: 40px;
   }
 
+  section#protein ul,
+  section#jointhealth ul {
+    line-height: 2.5em;
+    padding-top: 80px;
+  }
+
   /* From http://getbootstrap.com/examples/carousel/carousel.css */
   /* Carousel base class */
   .carousel {
-    height: 668px;
+    height: 527px;
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
-    bottom: 40%;
+    bottom: 30%;
     z-index: 10;
   }
 
   /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 668px;
+    height: 527px;
   }
   .carousel-inner > .item > img {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 668px;
+    height: 527px;
   }
 
   .product-list-container {
-    padding-top: 240px;
+    padding-top: 200px;
+  }
+
+  /* compensate for extra tall bottle background image reflections */
+  section#products .d2a-chevrons {
+    margin-top: -140px;
   }
 }
 

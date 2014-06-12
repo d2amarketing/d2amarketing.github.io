@@ -132,27 +132,33 @@
       </div>
 
       <div class="row product-list-container">
-        <div id="product-list-protein" class="col-md-6">
-          <h3 class="product-name">Advanced Performance<br><span>PROTEIN</span></h3>
-          <p class="product-purpose">BOOST, PERFORM, ENDURE & RECOVER</p>
-          <!--
-          gluten free
-          non gmo
-          soy free
-          grass fed
-          100% pure
-          -->
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <div id="product-list-protein">
+            <h3 class="product-name">Advanced Performance<br><span>PROTEIN</span></h3>
+            <p class="product-purpose">BOOST, PERFORM, ENDURE & RECOVER</p>
+            <!--
+            gluten free
+            non gmo
+            soy free
+            grass fed
+            100% pure
+            -->
+          </div>
         </div>
 
-        <div id="product-list-jointhealth" class="col-md-6">
-          <h3 class="product-name">Advanced Performance<br><span>JOINT HEALTH</span></h3>
-          <p class="product-purpose">REDUCE, TARGET, PREVENT & PERFORM</p>
-          <!--
-          gluten free
-          non gmo
-          soy free
-          -->
+        <div class="col-md-5">
+          <div id="product-list-jointhealth">
+            <h3 class="product-name">Advanced Performance<br><span>JOINT HEALTH</span></h3>
+            <p class="product-purpose">REDUCE, TARGET, PREVENT & PERFORM</p>
+            <!--
+            gluten free
+            non gmo
+            soy free
+            -->
+          </div>
         </div>
+        <div class="col-md-1"></div>
       </div>
 
       <div class="d2a-chevrons"></div>
@@ -166,14 +172,16 @@
           <h2>Advanced<br>Performance<br><span>PROTEIN</span></h2>
         </div>
         <div class="col-md-9">
-          <p>BOOST, PERFORM, ENDURE, RECOVER</p>
-          <!-- gluten free, non gmo, soy free, grass fed, 100% pure -->
+          <p>
+            BOOST, PERFORM, ENDURE, RECOVER<br>
+            <img src="images/protein-icons.png" alt="gluten free, non gmo, soy free, grass fed, 100% pure">
+          </p>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-3">
-          <img src="images/d2a-protein-bottle-details.png" alt="D2A Advanced Performance Protein bottle">
+          <img id="d2a-protein-bottle" src="images/d2a-protein-bottle-details.png" alt="D2A Advanced Performance Protein bottle">
         </div>
         <div class="col-md-9">
           <ul>
@@ -198,10 +206,15 @@
       </div>
 
       <h3 id="protein-overview">Advanced<br>Performance<br><span>PROTEIN OVERVIEW</span></h3>
-      <h4>Add more power to your workouts</h4>
-      <p>Can a protein formula increase your mental power as much as your physical performance? This one can.</p>
-      <p>In-addition to its pure whey concentrate, we enriched <em>Advanced Protein</em> with revolutionary <em>Chocamine®</em>. <em>Clinically tested and completely natural, Chocamine®</em> is comprised of the most powerful properties found in chocolate with studies showing it can <em>increase mental acuity, concentration and stamina.</em></p>
-      <p>As pre or post-workout fuel, a healthy snack or anything in-between, enjoy it daily to see and feel the Advanced Protein difference.</p>
+
+      <div class="row">
+        <div class="col-md-8">
+          <h4>Add more power to your workouts</h4>
+          <p>Can a protein formula increase your mental power as much as your physical performance? This one can.</p>
+          <p>In-addition to its pure whey concentrate, we enriched <em>Advanced Protein</em> with revolutionary <em>Chocamine®</em>. <em>Clinically tested and completely natural, Chocamine®</em> is comprised of the most powerful properties found in chocolate with studies showing it can <em>increase mental acuity, concentration and stamina.</em></p>
+          <p>As pre or post-workout fuel, a healthy snack or anything in-between, enjoy it daily to see and feel the Advanced Protein difference.</p>
+        </div>
+      </div>
 
       <div class="row">
         <div class="col-md-4">
@@ -223,12 +236,20 @@
 
       <div class="d2a-chevrons"></div>
 
-      <h3 id="protein-nutrition">Advanced<br>Performance<br><span>PROTEIN NUTRITION</span></h3>
-      <p>Contains no gluten, wheat, soy, corn, artificial colours, flavours, sweeteners or preservatives. Store in a cool, dry place.</p>
-      <p>Manufactured in Canada.<br>Chocamine® is a registered trademark of RFI LLC.</p>
+      <div class="row">
+        <div class="col-md-9">
+          <h3 id="protein-nutrition">Advanced<br>Performance<br><span>PROTEIN NUTRITION</span></h3>
+          <p>Contains no gluten, wheat, soy, corn, artificial colours, flavours, sweeteners or preservatives. Store in a cool, dry place.</p>
+          <p>Manufactured in Canada.<br>Chocamine® is a registered trademark of RFI LLC.</p>
 
-      <h3 id="protein-usage">Advanced<br>Performance<br><span>PROTEIN USAGE DIRECTIONS</span></h3>
-      <p>Depending on your health and fitness goals, enjoy 1-3 servings daily.  Mix 1 scoop (33 grams) into 1 cup of any liquid or smoothies.  Can also be added to foods such as yogurt or oatmeal with no blender required.</p>
+          <h3 id="protein-usage">Advanced<br>Performance<br><span>PROTEIN USAGE DIRECTIONS</span></h3>
+          <p>Depending on your health and fitness goals, enjoy 1-3 servings daily.  Mix 1 scoop (33 grams) into 1 cup of any liquid or smoothies.  Can also be added to foods such as yogurt or oatmeal with no blender required.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <a href="#" data-toggle="modal" data-target="#d2aproteinnutritionfacts"><img src="images/protein-nutrition-facts-small.png" alt="Advanced Performance Protein nutrition facts"></a><br>
+          CLICK TO ENLARGE
+        </div>
+      </div>
 
       <div class="d2a-chevrons"></div>
     </div>
@@ -237,18 +258,20 @@
   <section id="jointhealth">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-5">
           <h2>Advanced<br>Performance<br><span>JOINT HEALTH</span></h2>
         </div>
-        <div class="col-md-9">
-          <p>TARGET, REDUCE, PREVENT, PERFORM</p>
-          <!-- gluten free, non gmo, soy free -->
+        <div class="col-md-7">
+          <p>
+            TARGET, REDUCE, PREVENT, PERFORM<br>
+            <img src="images/jointhealth-icons.png" alt="gluten free, non gmo, soy free">
+          </p>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-3">
-          <img src="images/d2a-jointhealth-bottle-details.png" alt="D2A Advanced Performance Joint Health bottle">
+          <img id="d2a-jointhealth-bottle" src="images/d2a-jointhealth-bottle-details.png" alt="D2A Advanced Performance Joint Health bottle">
         </div>
         <div class="col-md-9">
         <ul>
@@ -301,12 +324,21 @@
 
       <div class="d2a-chevrons"></div>
 
-      <h3 id="jointhealth-nutrition">Advanced<br>Performance<br><span>JOINT HEALTH NUTRITION</span></h3>
-      <p>Contains no gluten, dairy, wheat, soy, corn, artificial colours, flavours, sweeteners or preservatives. Store in a cool, dry place.</p>
-      <p>Manufactured in Canada.<br>Microactive Curcumin® is a registered trademark of BioActives, LLC.</p>
+      <div class="row">
+        <div class="col-md-9">
+          <h3 id="jointhealth-nutrition">Advanced<br>Performance<br><span>JOINT HEALTH NUTRITION</span></h3>
+          <p>Contains no gluten, dairy, wheat, soy, corn, artificial colours, flavours, sweeteners or preservatives. Store in a cool, dry place.</p>
+          <p>Manufactured in Canada.<br>Microactive Curcumin® is a registered trademark of BioActives, LLC.</p>
 
-      <h3 id="jointhealth-usage">Advanced<br>Performance<br><span>JOINT HEALTH USAGE</span></h3>
-      <p>To reduce, treat and prevent pain and inflammation associated with over-use, arthritis and natural aging, take two (2) capsules daily – ideally before meals.</p>
+          <h3 id="jointhealth-usage">Advanced<br>Performance<br><span>JOINT HEALTH USAGE</span></h3>
+          <p>To reduce, treat and prevent pain and inflammation associated with over-use, arthritis and natural aging, take two (2) capsules daily – ideally before meals.</p>
+        </div>
+
+        <div class="col-md-3 text-center">
+          <a href="#" data-toggle="modal" data-target="#d2ajointhealthnutritionfacts"><img src="images/jointhealth-nutrition-facts-small.png" alt="Advanced Performance Joint Health nutrition facts"></a><br>
+          CLICK TO ENLARGE
+        </div>
+      </div>
 
       <div class="d2a-chevrons"></div>
     </div>
@@ -470,6 +502,24 @@
           <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">Subscribe</button>
         </div>
       </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="d2aproteinnutritionfacts" tabindex="-1" role="dialog" aria-labelledby="d2aproteinnutritionfactslabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- should use svg but browser seems to not like .svgz extension -->
+      <img src="images/protein-nutrition-facts.svgz" alt="Nutrition Facts" id="d2aproteinnutritionfactslabel">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="d2ajointhealthnutritionfacts" tabindex="-1" role="dialog" aria-labelledby="d2ajointhealthnutritionfactslabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- should use svg but browser seems to not like .svgz extension -->
+      <img src="images/jointhealth-nutrition-facts.svgz" alt="Nutrition Facts" id="d2ajointhealthnutritionfactslabel">
     </div>
   </div>
 </div>
