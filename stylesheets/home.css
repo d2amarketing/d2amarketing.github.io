@@ -350,7 +350,7 @@ em {
   }
 
   section#protein {
-    height: 1951px;
+    height: 2100px; /*1951px; increased to account for aminco acid table */
     background-image: url(../images/backgrounds/protein-background.jpg);
     background-size: cover;
     padding-top: 32px;
