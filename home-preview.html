@@ -22,6 +22,36 @@
   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
+<script>
+	window.onload = function(){
+		window.debug=true;
+		window.onkeydown = function(e){
+			if(e.keyCode == 68 && window.debug == true){
+				if (document.body.hasClass("debug")){
+					document.body.removeClass("debug");
+				}else{
+					document.body.addClass("debug");
+				}
+			}
+		}
+	}
+	
+	Element.prototype.hasClass = function (className) {
+		return new RegExp(' ' + className + ' ').test(' ' + this.className + ' ');
+	};
+	Element.prototype.addClass = function (className) {
+		if (!this.hasClass(className)) { this.className += ' ' + className; }
+	};
+	Element.prototype.removeClass = function (className) {
+		var newClass = ' ' + this.className.replace(/[\t\r\n]/g, ' ') + ' ';
+		if (this.hasClass(className)) {
+			while (newClass.indexOf( ' ' + className + ' ') >= 0) {
+				newClass = newClass.replace(' ' + className + ' ', ' ');
+			}
+			this.className = newClass.replace(/^\s+|\s+$/g, ' ');
+		}
+	};
+</script>
 </head>
 <body>
 
@@ -122,11 +152,11 @@
 
   <section id="products">
     <div class="container">
-      <div class="row">
+      <div class="row product-title">
         <div class="col-md-2">
           <h2>Products</h2>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7">
           <p>Developed with the highest quality, research-supported ingredients. Boost your health. Increase your performance. Get better results.</p>
         </div>
       </div>

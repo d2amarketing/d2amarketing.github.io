@@ -22,7 +22,9 @@ p {
   margin: 0; /* override bootstrap */
   padding: 0 0 10px; /* override bootstrap */
 }
-
+section p {
+	font-size:1.32vw;
+}
 button,
 .btn {
   font-family: 'Anton', sans-serif;
@@ -122,7 +124,15 @@ main .btn {
   padding-top: 8px;
   padding-bottom: 2px;
 }
-
+.row.product-title{
+	width:82.5%;
+	margin:2% auto 0 auto;
+}
+.row.product-title p{
+	margin-left:5.5%;
+	margin-top:1%;
+	line-height:1.9vw;
+}
 .product-name span {
   font-size: 150%;
 }
@@ -252,6 +262,12 @@ em {
   bottom: 0;
 }
 
+.carousel-inner{
+	width:100%;
+	height:100%;
+	position:relative;	
+}
+
 /* desktop and tablet layout */
 @media only screen and (min-width: 768px) {
   h1 {
@@ -260,6 +276,7 @@ em {
 
   h2 {
     font-size: 38px;
+    font-size: 3.65vw;
   }
 
   h2>span {
@@ -310,16 +327,22 @@ em {
   }
 
   section#slides {
-    height: 527px;
+/*    height: 527px;*/
   }
 
   section#products {
-    height: 522px;
+   /* height: 522px;*/
     background-image: url(../images/backgrounds/products-background.jpg);
     background-size: cover;
-    padding-top: 36px;
+	width:100%;
+	padding-bottom:52%;
   }
 
+  section#products .container{
+	  position:absolute;
+	  width:100%;
+	  height:100%;  
+  }
   section#protein {
     height: 1951px;
     background-image: url(../images/backgrounds/protein-background.jpg);
@@ -365,7 +388,7 @@ em {
   /* From http://getbootstrap.com/examples/carousel/carousel.css */
   /* Carousel base class */
   .carousel {
-    height: 527px;
+    /*height: 527px;*/
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
@@ -375,14 +398,14 @@ em {
 
   /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 527px;
+    height: 100%;
   }
   .carousel-inner > .item > img {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 527px;
+    height: 100%;
   }
 
   .carousel-indicators {
@@ -399,3 +422,7 @@ em {
   }
 }
 
+
+body.debug section#products {
+	background-image: url(../images/backgrounds/debug-products-background.jpg);
+}
