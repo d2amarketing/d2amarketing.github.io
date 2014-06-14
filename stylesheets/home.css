@@ -254,7 +254,8 @@ em {
 
 /* desktop and tablet layout */
 @media only screen and (min-width: 768px) {
-  h1 {
+  h1,
+  .carousel-caption h1 {
     font-size: 44px;
   }
 
