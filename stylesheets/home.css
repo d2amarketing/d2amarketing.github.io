@@ -385,8 +385,8 @@ em {
     padding-top: 40px;
   }
 
-  section#protein ul,
-  section#jointhealth ul {
+  section#protein ul.product-summary,
+  section#jointhealth ul.product-summary {
     line-height: 2.5em;
     padding-top: 80px;
   }
