@@ -241,6 +241,34 @@ section#protein h4 {
   padding-top: 40px;
 }
 
+section#protein .protein-aminoacidprofile h4 {
+  padding-top: 0;
+}
+
+section#protein .protein-aminoacidprofile table {
+  width: 100%;
+}
+
+section#protein .protein-aminoacidprofile table tr {  
+  border-color: white;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+}
+
+section#protein .protein-aminoacidprofile table tr:last-child {
+  border-width: 0;
+}
+
+section#protein .protein-aminoacidprofile table tr td {
+  border-color: white;
+  border-style: solid;
+  border-width: 0 1px 0 0;
+}
+
+section#protein .protein-aminoacidprofile table tr td:last-child {
+  border-width: 0;
+}
+
 section#contact address {
   padding-top: 6px;
 }
@@ -270,7 +298,8 @@ em {
 
 /* desktop and tablet layout */
 @media only screen and (min-width: 768px) {
-  h1 {
+  h1,
+  .carousel-caption h1 {
     font-size: 44px;
   }
 
@@ -344,7 +373,7 @@ em {
 	  height:100%;  
   }
   section#protein {
-    height: 1951px;
+    height: 2100px; /*1951px; increased to account for aminco acid table */
     background-image: url(../images/backgrounds/protein-background.jpg);
     background-size: cover;
     padding-top: 32px;
@@ -379,8 +408,8 @@ em {
     padding-top: 40px;
   }
 
-  section#protein ul,
-  section#jointhealth ul {
+  section#protein ul.product-summary,
+  section#jointhealth ul.product-summary {
     line-height: 2.5em;
     padding-top: 80px;
   }
