@@ -231,6 +231,34 @@ section#protein h4 {
   padding-top: 40px;
 }
 
+section#protein .protein-aminoacidprofile h4 {
+  padding-top: 0;
+}
+
+section#protein .protein-aminoacidprofile table {
+  width: 100%;
+}
+
+section#protein .protein-aminoacidprofile table tr {  
+  border-color: white;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+}
+
+section#protein .protein-aminoacidprofile table tr:last-child {
+  border-width: 0;
+}
+
+section#protein .protein-aminoacidprofile table tr td {
+  border-color: white;
+  border-style: solid;
+  border-width: 0 1px 0 0;
+}
+
+section#protein .protein-aminoacidprofile table tr td:last-child {
+  border-width: 0;
+}
+
 section#contact address {
   padding-top: 6px;
 }
