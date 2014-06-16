@@ -115,33 +115,31 @@
       <li data-target="#slides" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="item active">
-        <img src="images/backgrounds/index-slide1.jpg" alt="">
+      <div class="item active" style="background-image:URL(images/backgrounds/index-slide1.jpg);">
         <div class="container">
           <div class="carousel-caption">
             <h1>D2A: Direct to Athlete</h1>
             <p>Made by and for those who need and deserve the best.</p>
-            <p><a class="btn btn-lg btn-default" href="#about">LEARN MORE</a></button>
+            <a class="btn btn-lg btn-default" href="#about">LEARN MORE</a>
           </div>
         </div>
       </div>
-      <div class="item">
+      <div class="item" style="background-image:URL(images/backgrounds/index-slide2.jpg);">
         <img src="images/backgrounds/index-slide2.jpg" alt="">
         <div class="container">
           <div class="carousel-caption">
             <h1>Superior Formulas</h1>
             <p>Seriously good ingredients inside, results guaranteed.</p>
-            <p><a class="btn btn-lg btn-default" href="#products">LEARN MORE</a></button>
+            <a class="btn btn-lg btn-default" href="#products">LEARN MORE</a>
           </div>
         </div>
       </div>
-      <div class="item">
-        <img src="images/backgrounds/index-slide3.jpg" alt="">
+      <div class="item" style="background-image:URL(images/backgrounds/index-slide3.jpg);">
         <div class="container">
           <div class="carousel-caption">
             <h1>Join D2A</h1>
             <p>Trainers and fitness professionals, join our team.</p>
-            <p><a class="btn btn-lg btn-default" href="#join">LEARN MORE</a></button>
+            <a class="btn btn-lg btn-default" href="#join">LEARN MORE</a>
           </div>
         </div>
       </div>
@@ -198,10 +196,10 @@
   <section id="protein">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
           <h2>Advanced<br>Performance<br><span>PROTEIN</span></h2>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-5 boost">
           <p>
             BOOST, PERFORM, ENDURE, RECOVER<br>
             <img src="images/protein-icons.png" alt="gluten free, non gmo, soy free, grass fed, 100% pure">
@@ -209,12 +207,12 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-3">
+      <div class="row bottle">
+        <div class="col-md-5 bottle-image">
           <img id="d2a-protein-bottle" src="images/d2a-protein-bottle-details.png" alt="D2A Advanced Performance Protein bottle">
         </div>
-        <div class="col-md-9">
-          <ul class="product-summary">
+        <div class="col-md-6 product-summary">
+          <ul>
             <li>22 grams of pure protein whey concentrate.</li>
             <li>Enhanced with revolutionary Chocamine®, a potent cocoa extract.</li>
             <li>Naturally increases metabolism, lean muscle and recovery.</li>
@@ -235,10 +233,11 @@
         </div>
       </div>
 
-      <h3 id="protein-overview">Advanced<br>Performance<br><span>PROTEIN OVERVIEW</span></h3>
+
 
       <div class="row">
         <div class="col-md-8">
+	      <h3 id="protein-overview">Advanced<br>Performance<br><span>PROTEIN OVERVIEW</span></h3>
           <h4>Add more power to your workouts</h4>
           <p>Can a protein formula increase your mental power as much as your physical performance? This one can.</p>
           <p>In-addition to its pure whey concentrate, we enriched <em>Advanced Protein</em> with revolutionary <em>Chocamine®</em>. <em>Clinically tested and completely natural, Chocamine®</em> is comprised of the most powerful properties found in chocolate with studies showing it can <em>increase mental acuity, concentration and stamina.</em></p>
@@ -370,10 +369,10 @@
   <section id="jointhealth">
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-7 title">
           <h2>Advanced<br>Performance<br><span>JOINT HEALTH</span></h2>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-5 subtitle">
           <p>
             TARGET, REDUCE, PREVENT, PERFORM<br>
             <img src="images/jointhealth-icons.png" alt="gluten free, non gmo, soy free">
@@ -381,12 +380,12 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-3">
+      <div class="row bottle">
+        <div class="col-md-5 bottle-image">
           <img id="d2a-jointhealth-bottle" src="images/d2a-jointhealth-bottle-details.png" alt="D2A Advanced Performance Joint Health bottle">
         </div>
-        <div class="col-md-9">
-        <ul class="product-summary">
+        <div class="col-md-6 product-summary">
+        <ul>
           <li>Targets joint pain, stiffness and inflammation.</li>
           <li>Contains sports-specific Protease Enzyme blend, Bromelain and MicroActive® Curcumin.</li>
           <li>Provides up to 7x better absorption.</li>
@@ -407,7 +406,11 @@
         </div>
       </div>
 
-      <h3 id="jointhealth-overview">Advanced<br>Performance<br><span>JOINT HEALTH OVERVIEW</span></h3>
+      <div class="row">
+	  	<div class="col-md-9">
+	      <h3 id="jointhealth-overview">Advanced<br>Performance<br><span>JOINT HEALTH OVERVIEW</span></h3>
+		</div>
+	  </div>
 
       <div class="row">
         <div class="col-md-4">
@@ -459,10 +462,8 @@
   <section id="about">
     <div class="container">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-11">
           <h2>About D2A</h2>
-        </div>
-        <div class="col-md-7">
           <p>We’re a team of professionals with expertise in sports, nutrition, formulation and technology.  Together, we’re a united force with a mission to provide the highest quality nutritional formulas for maximum health and sports performance.</p>
         </div>
       </div>
@@ -484,10 +485,8 @@
   <section id="join">
     <div class="container">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-11">
           <h2>Join D2A</h2>
-        </div>
-        <div class="col-md-10">
           <p>Are you a certified personal trainer, gym owner or Fitness specialist with a passion for results-driven sports supplements?</p>
         </div>
       </div>
@@ -500,7 +499,7 @@
       </div>
 
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <p>To learn more, please complete the following:</p>
 
           <!-- Begin MailChimp Signup Form -->
@@ -543,16 +542,14 @@
   <section id="contact">
     <div class="container">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-11">
           <h2>Contact Us</h2>
-        </div>
-        <div class="col-md-10">
           <p>We’re here to answer any questions, field your comments and more.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-3">
           <img src="images/d2a-logo-white.png" alt="D2A | Direct 2 Athlete">
           <address>
             D2A Nutritional Products Inc<br>
@@ -561,7 +558,7 @@
             M4G 1Y9
           </address>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-6">
           <h4>Here’s how to reach us:</h4>
           <p><em>General Inquiries</em><br>info@D-2A.com</p>
           <p><em>Sales Inquiries</em><br>sales@D-2A.com</p>
@@ -648,6 +645,31 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-48047314-1', 'd-2a.com');
 ga('send', 'pageview');
+
+
+	$( document ).ready(function() {
+		$(".navbar-nav a").click( function() {
+			var location = $(this).attr("href");
+			var offset = $(location).offset().top-129;
+			var init_offset = $("body").scrollTop();
+			setTimeout(function(){
+				//$("body").scrollTop(offset);
+				}, 1000
+			);
+			window.location.hash = location;
+			$("body").scrollTop(init_offset);
+			var anim_duration = 500;
+			if (Math.abs(init_offset-offset) > 2000){
+				anim_duration = 3000;
+				console.log("slow");
+			}
+			$('body').animate({
+				scrollTop:offset
+			}, anim_duration);
+			return false;
+		});
+	});
+
 </script>
 
 </body>

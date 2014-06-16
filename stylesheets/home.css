@@ -23,7 +23,7 @@ p {
   padding: 0 0 10px; /* override bootstrap */
 }
 section p {
-	font-size:1.32vw;
+	/*font-size:1.32vw;*/
 }
 button,
 .btn {
@@ -116,7 +116,15 @@ main .btn {
 .carousel-caption {
   bottom: 0%;
 }
-
+.carousel .item{
+	min-height:527px;
+	background-size:cover;
+	background-position:top center;
+	background-repeat:no-repeat;	
+}
+.carousel .item img{
+	opacity:0;
+}
 .product-name {
   font-size: 95%;
   text-align: center;
@@ -131,7 +139,7 @@ main .btn {
 .row.product-title p{
 	margin-left:5.5%;
 	margin-top:1%;
-	line-height:1.9vw;
+	/*line-height:1.9vw;*/
 }
 .product-name span {
   font-size: 150%;
@@ -218,7 +226,9 @@ section#jointhealth {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
+section#jointhealth .subtitle{
+	margin:102px 0 0 -75px;
+}
 section#about {
   background-image: url(../images/backgrounds/about-d2a-background-mobile.jpg);
   background-repeat: no-repeat;
@@ -284,8 +294,17 @@ em {
 
 .carousel-caption h1 {
   font-size: 19px;
+  margin:26px 0 0 0;
 }
-
+.carousel-caption .btn{
+	font-size:15px;
+	padding: 6px 15px;	
+}
+.carousel-caption p {
+	/*font-size:1.2vw;*/
+	font-size:18.5px;
+	padding-bottom:8px;
+}
 .carousel-indicators {
   bottom: 0;
 }
@@ -299,13 +318,12 @@ em {
 /* desktop and tablet layout */
 @media only screen and (min-width: 768px) {
   h1,
-  .carousel-caption h1 {
-    font-size: 44px;
+ .carousel-caption h1  {
+    font-size: 44px
   }
-
   h2 {
     font-size: 38px;
-    font-size: 3.65vw;
+    /*font-size: 3.65vw;*/
   }
 
   h2>span {
@@ -354,34 +372,50 @@ em {
   main {
     margin-top: 128px;
   }
-
+	section .container{
+		width:1055px;	
+	}
+	.row{
+		margin:0 auto;
+		width:82.5%;	
+	}
+	.row.bottle{
+		width:100%;	
+	}
+	div.bottle-image{
+		margin:-60px 0 0 20px;	
+	}
   section#slides {
 /*    height: 527px;*/
   }
 
   section#products {
-   /* height: 522px;*/
     background-image: url(../images/backgrounds/products-background.jpg);
     background-size: cover;
 	width:100%;
-	padding-bottom:52%;
+	/*padding-bottom:52%;*/
+	 height: 527px;
+   
   }
 
   section#products .container{
-	  position:absolute;
+/*	  position:absolute;
 	  width:100%;
-	  height:100%;  
+	  height:100%;  */
   }
   section#protein {
-    height: 2100px; /*1951px; increased to account for aminco acid table */
+    height: 2300px; /*1951px; increased to account for aminco acid table */
     background-image: url(../images/backgrounds/protein-background.jpg);
     background-size: cover;
     padding-top: 32px;
 
   }
-
+	section#protein .row .boost{
+		padding-left: 0px;
+		margin-top:103px;
+	}
   section#jointhealth {
-    height: 1800px;
+    height: 1860px;
     background-image: url(../images/backgrounds/joint-health-background.jpg);
     background-size: cover;
     padding-top: 40px;
@@ -393,7 +427,13 @@ em {
     background-size: cover;
     padding-top: 26px;
   }
-
+section#about h2,
+section#join h2,
+section#contact h2{
+	float:left;
+	display:inline;
+	margin-right:20px;
+}
   section#join {
     height: 568px;
     background-image: url(../images/backgrounds/join-d2a-background.jpg);
@@ -408,23 +448,32 @@ em {
     padding-top: 40px;
   }
 
-  section#protein ul.product-summary,
-  section#jointhealth ul.product-summary {
+  section#protein .product-summary ul,
+  section#jointhealth .product-summary ul{
     line-height: 2.5em;
     padding-top: 80px;
+	padding-left:0;
+	margin-left:-60px;
   }
 
   /* From http://getbootstrap.com/examples/carousel/carousel.css */
   /* Carousel base class */
   .carousel {
-    /*height: 527px;*/
+    height: 527px;
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
-    bottom: 30%;
+    top: 30%;
     z-index: 10;
+	left:0;
+	width:100%;
+	text-align:center;
+	background:rgba(0,0,0,0.5);
+	height:200px;
   }
-
+.carousel-control{
+	z-index:20;
+}
   /* Declare heights because of positioning of img element */
   .carousel .item {
     height: 100%;
@@ -449,9 +498,56 @@ em {
   section#products .d2a-chevrons {
     margin-top: -140px;
   }
+  section#join .mc-field-group label{
+	  font-weight:normal;
+	  text-align:right;
+	  float:left;
+	  display:inline;
+	  width:79px;
+	  padding-right:5px;
+	  font-size:10px;
+	  line-height:10px;
+  }
+  section#join .mc-field-group input{
+		width:193px;
+		height:25px;  
+  }
+  section#join .mc-field-group .asterisk{
+	  right:45px;  
+	  top:10px;
+  }
+  section#join #mc_embed_signup form{
+	  padding-top:0;  
+	padding-left:0px;  
+  }
+  section#join .indicates-required{
+	  margin-right:50px;
+  }
+  section#join .mc-field-group {
+	  min-height:25px;
+	  padding-bottom:3%;
+  }
 }
-
 
 body.debug section#products {
 	background-image: url(../images/backgrounds/debug-products-background.jpg);
+}
+section#slides {
+	min-height:527px;
+}
+body.debug section#slides div.item.active img{
+	opacity:0;
+}
+
+body.debug section#slides{
+	background: url(../images/backgrounds/debug-index-slide1.jpg) no-repeat top center !important;
+}
+body.debug section#slides .carousel-caption{
+	background:rgba(0,0,0,0);	
+}
+body.debug {
+	background: url(../images/backgrounds/debug-D2A-website-desktop.jpg) no-repeat center 349px !important;
+}
+body.debug section, body.debug section#slides .item.active, body.debug section#slides{
+	background:transparent !important;	
 }
