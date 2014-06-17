@@ -358,9 +358,11 @@
       </div>
 
       <div class="row">
-        <h3 id="protein-usage">Advanced<br>Performance<br><span>PROTEIN USAGE DIRECTIONS</span></h3>
-        <p>Depending on your health and fitness goals, enjoy 1-3 servings daily.  Mix 1 scoop (33 grams) into 1 cup of any liquid or smoothies.  Can also be added to foods such as yogurt or oatmeal with no blender required.</p>
-      </div>
+        <div class="col-md-10">
+			<h3 id="protein-usage">Advanced<br>Performance<br><span>PROTEIN USAGE DIRECTIONS</span></h3>
+			<p>Depending on your health and fitness goals, enjoy 1-3 servings daily.  Mix 1 scoop (33 grams) into 1 cup of any liquid or smoothies.  Can also be added to foods such as yogurt or oatmeal with no blender required.</p>
+		  </div>
+	  </div>
 
       <div class="d2a-chevrons"></div>
     </div>
@@ -651,11 +653,11 @@ ga('send', 'pageview');
 		$(".navbar-nav a").click( function() {
 			var location = $(this).attr("href");
 			var offset = $(location).offset().top-129;
+			if (window.innerWidth <= 640){
+				offset -= 30;
+			}
 			var init_offset = $("body").scrollTop();
-			setTimeout(function(){
-				//$("body").scrollTop(offset);
-				}, 1000
-			);
+			
 			window.location.hash = location;
 			$("body").scrollTop(init_offset);
 			var anim_duration = 500;
@@ -666,6 +668,7 @@ ga('send', 'pageview');
 			$('body').animate({
 				scrollTop:offset
 			}, anim_duration);
+			$( ".navbar-collapse" ).removeClass( "in" )
 			return false;
 		});
 	});
