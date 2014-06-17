@@ -725,3 +725,66 @@ body.debug section, body.debug section#slides .item.active, body.debug section#s
 		margin-bottom:20px;	
 	}
 }
+@media all and (width:768px){
+	header, main, section{
+		max-width:768px;
+		overflow:hidden;
+	}
+}
+@media all and (min-width:640px)
+and (max-width:992px){
+	section .container{
+		width:100%;	
+	}
+	h2{
+		font-size:29px;	
+	}
+	.product-list-container .col-md-1{
+		display:none;
+	}
+	.product-list-container .col-md-5{
+		margin-right:30px;
+	}
+	section#products{
+		height:577px;	
+	}
+	section#protein .row .boost{
+		margin-left:60px;
+		margin-top:64px;
+	}
+	.row.product-detail-links .col-md-4{
+		float:none;
+		margin:10px auto;
+		width:250px;
+	}
+	.protein-aminoacidprofile{
+		width:100%;	
+	}
+	section#protein{
+	height:3270px;	
+	}
+	section#jointhealth{
+		height:2300px;	
+	}
+	section#about{
+		height:707px;
+	}
+	section#join{
+		height:638px;
+	}
+	section#contact .col-md-6{
+		margin-left:30px;
+	}
+	section#join .mc-field-group label{
+		text-align:left;
+		font-size:12px;
+		width:180px;
+	}
+	section#join .mc-field-group .asterisk{
+		top:24px;
+		right:27px;	
+	}
+	section#join .mc-field-group{
+		padding-bottom:4%;	
+	}
+}

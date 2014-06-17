@@ -24,7 +24,7 @@
 </style>
 <script>
 	window.onload = function(){
-		window.debug=true;
+		window.debug=false;
 		window.onkeydown = function(e){
 			if(e.keyCode == 68 && window.debug == true){
 				if (document.body.hasClass("debug")){
@@ -52,6 +52,9 @@
 		}
 	};
 </script>
+<!--
+<script src="http://192.168.0.20:8080/target/target-script-min.js#anonymous"></script>
+-->
 </head>
 <body>
 
@@ -64,15 +67,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="images/d2a-logo-color.png" alt="D2A (Direct 2 Athlete)"></a>
+      <a class="navbar-brand animatefragment" href="#"><img src="images/d2a-logo-color.png" alt="D2A (Direct 2 Athlete)"></a>
     </div>
 
     <nav class="navbar-collapse collapse">
       <ul class="nav navbar-nav pages">
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about">About D2A</a></li>
-        <li><a href="#join">Join Our Team</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#products" class="animatefragment">Products</a></li>
+        <li><a href="#about" class="animatefragment">About D2A</a></li>
+        <li><a href="#join" class="animatefragment">Join Our Team</a></li>
+        <li><a href="#contact" class="animatefragment">Contact</a></li>
       </ul>
 
       <div class="navbar-right text-right">
@@ -120,7 +123,7 @@
           <div class="carousel-caption">
             <h1>D2A: Direct to Athlete</h1>
             <p>Made by and for those who need and deserve the best.</p>
-            <a class="btn btn-lg btn-default" href="#about">LEARN MORE</a>
+            <a class="btn btn-lg btn-default animatefragment" href="#about">LEARN MORE</a>
           </div>
         </div>
       </div>
@@ -130,7 +133,7 @@
           <div class="carousel-caption">
             <h1>Superior Formulas</h1>
             <p>Seriously good ingredients inside, results guaranteed.</p>
-            <a class="btn btn-lg btn-default" href="#products">LEARN MORE</a>
+            <a class="btn btn-lg btn-default animatefragment" href="#products">LEARN MORE</a>
           </div>
         </div>
       </div>
@@ -139,7 +142,7 @@
           <div class="carousel-caption">
             <h1>Join D2A</h1>
             <p>Trainers and fitness professionals, join our team.</p>
-            <a class="btn btn-lg btn-default" href="#join">LEARN MORE</a>
+            <a class="btn btn-lg btn-default animatefragment" href="#join">LEARN MORE</a>
           </div>
         </div>
       </div>
@@ -223,13 +226,13 @@
 
       <div class="row product-detail-links">
         <div class="col-md-4">
-          <a href="#protein-overview" class="btn btn-lg">Overview</a>
+          <a href="#protein-overview" class="btn btn-lg animatefragment">Overview</a>
         </div>
         <div class="col-md-4">
-          <a href="#protein-nutrition" class="btn btn-lg">Nutrition Information</a>
+          <a href="#protein-nutrition" class="btn btn-lg animatefragment">Nutrition Information</a>
         </div>
         <div class="col-md-4">
-          <a href="#protein-usage" class="btn btn-lg">Usage Directions</a>
+          <a href="#protein-usage" class="btn btn-lg animatefragment">Usage Directions</a>
         </div>
       </div>
 
@@ -398,13 +401,13 @@
 
       <div class="row product-detail-links">
         <div class="col-md-4">
-          <a href="#jointhealth-overview" class="btn btn-lg">Overview</a>
+          <a href="#jointhealth-overview" class="btn btn-lg animatefragment">Overview</a>
         </div>
         <div class="col-md-4">
-          <a href="#jointhealth-nutrition" class="btn btn-lg">Nutrition Information</a>
+          <a href="#jointhealth-nutrition" class="btn btn-lg animatefragment">Nutrition Information</a>
         </div>
         <div class="col-md-4">
-          <a href="#jointhealth-usage" class="btn btn-lg">Usage Directions</a>
+          <a href="#jointhealth-usage" class="btn btn-lg animatefragment">Usage Directions</a>
         </div>
       </div>
 
@@ -476,7 +479,7 @@
           <p>Hence why our formulas are offered exclusively via certified Health and Fitness professionals as well as select fitness studios and gyms.</p>
           <p>Last, by tapping into our digital expertise and utilizing our custom D2A platform, we're able to provide a seamless ordering and fulfillment experience every time.</p>
           <p><em>Hence our name D2A: Direct to Athlete.</em><br>Direct to those who need and deserve the best nutritional support for their health and performance.</p>
-          <p><a href="#join" class="btn">Learn more about joining the D2A team.</a></p>
+         <p><a href="#join" class="btn animatefragment">Learn more about joining the D2A team.</a></p>
         </div>
       </div>
 
@@ -592,11 +595,11 @@
             </div>
             <div class="mc-field-group">
             	<label for="mce-FNAME">First Name </label>
-            	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+            	<input type="text" value="" name="FNAME" id="mce-FNAME">
             </div>
             <div class="mc-field-group">
             	<label for="mce-LNAME">Last Name </label>
-            	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+            	<input type="text" value="" name="LNAME" id="mce-LNAME">
             </div>
             <div id="mce-responses" class="clear">
             	<div class="response" id="mce-error-response" style="display:none"></div>
@@ -650,7 +653,7 @@ ga('send', 'pageview');
 
 
 	$( document ).ready(function() {
-		$(".navbar-nav a").click( function() {
+		$("a.animatefragment").click( function() {
 			var location = $(this).attr("href");
 			var offset = $(location).offset().top-129;
 			if (window.innerWidth <= 640){
