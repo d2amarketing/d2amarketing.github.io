@@ -22,9 +22,15 @@ p {
   margin: 0; /* override bootstrap */
   padding: 0 0 10px; /* override bootstrap */
 }
+
 section p {
 	/*font-size:1.32vw;*/
 }
+
+input {
+  color: black;
+}
+
 button,
 .btn {
   font-family: 'Anton', sans-serif;
