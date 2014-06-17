@@ -38,6 +38,10 @@ header .btn {
   border-radius: 0;
 }
 
+.navbar-right {
+  text-align: center;
+}
+
 .navbar-right button {
   padding: 0; /* override bootstrap .btn default of 6px 12px padding */
 }
@@ -80,7 +84,11 @@ nav {
 /* make all buttons match instagram button size */
 .navbar-nav>li>a.social-button {
   padding: 0;
-  margin-right: 10px;
+  margin-right: 20px;
+}
+
+.navbar-nav>li:last-child>a.social-button {
+  margin-right: 0;
 }
 
 .social-button img {
@@ -368,12 +376,17 @@ em {
     /* padding-top: 15px; comes from navbar-nav>li>a */
   }
 
+  .navbar-right {
+    text-align: right;
+  }
+
   .navbar-right button {
     margin-top: 15px;
   }
 
   .social-buttons {
     padding-top: 27px;
+    float: none;
   }
 
   main {
