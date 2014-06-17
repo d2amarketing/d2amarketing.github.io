@@ -806,4 +806,9 @@ and (max-width:992px){
 	section#join .mc-field-group{
 		padding-bottom:4%;	
 	}
+	nav.navbar-collapse{
+		position:absolute;
+		top:0px;
+		right: 20px;	
+	}
 }
