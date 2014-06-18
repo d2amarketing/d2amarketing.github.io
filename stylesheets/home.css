@@ -806,6 +806,9 @@ and (max-width:992px){
 		top:0px;
 		right: 20px;
 	}
+	section#products .row.product-title .col-md-7{
+		margin-left:20px;
+	}
 }
 @media all and (max-width:768px){
 
