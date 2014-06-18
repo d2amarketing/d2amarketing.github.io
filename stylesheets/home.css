@@ -15,7 +15,7 @@ header {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Anton', sans-serif;
   margin-top: 0; /* override bootstrap */
-  padding-top: 0px; /* override bootstrap */
+  padding-top: 0; /* override bootstrap */
 }
 
 p {
@@ -24,7 +24,7 @@ p {
 }
 
 section p {
-	/*font-size:1.32vw;*/
+  /*font-size:1.32vw;*/
 }
 
 input {
@@ -128,24 +128,27 @@ main .btn {
 
 /* override bootstrap */
 .carousel-caption {
-	bottom: 0%;
-	background:rgba(0,0,0,0.5);
-	left:0;
-	right:0;
-}
-.carousel-control{
-	z-index:20;
+  bottom: 0%;
+  background: rgba(0,0,0,0.5);
+  left: 0;
+  right: 0;
 }
 
-.carousel .item{
-	min-height:527px;
-	background-size:cover;
-	background-position:top center;
-	background-repeat:no-repeat;	
+.carousel-control {
+  z-index: 20;
 }
-.carousel .item img{
-	opacity:0;
+
+.carousel .item {
+  min-height: 527px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
+
+.carousel .item img {
+  opacity: 0;
+}
+
 .product-name {
   font-size: 95%;
   text-align: center;
@@ -153,15 +156,18 @@ main .btn {
   padding-top: 8px;
   padding-bottom: 2px;
 }
-.row.product-title{
-	width:82.5%;
-	margin:2% auto 0 auto;
+
+.row.product-title {
+  width: 82.5%;
+  margin: 2% auto 0 auto;
 }
-.row.product-title p{
-	margin-left:5.5%;
-	margin-top:1%;
-	/*line-height:1.9vw;*/
+
+.row.product-title p {
+  margin-left: 5.5%;
+  margin-top: 1%;
+  /*line-height: 1.9vw;*/
 }
+
 .product-name span {
   font-size: 150%;
 }
@@ -239,7 +245,6 @@ section#protein {
   background-image: url(../images/backgrounds/protein-background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-
 }
 
 section#jointhealth {
@@ -247,9 +252,11 @@ section#jointhealth {
   background-repeat: no-repeat;
   background-position: center center;
 }
-section#jointhealth .subtitle{
-	margin:102px 0 0 -75px;
+
+section#jointhealth .subtitle {
+  margin:102px 0 0 -75px;
 }
+
 section#about {
   background-image: url(../images/backgrounds/about-d2a-background-mobile.jpg);
   background-repeat: no-repeat;
@@ -280,7 +287,7 @@ section#protein .protein-aminoacidprofile table {
   width: 100%;
 }
 
-section#protein .protein-aminoacidprofile table tr {  
+section#protein .protein-aminoacidprofile table tr {
   border-color: white;
   border-style: solid;
   border-width: 0 0 1px 0;
@@ -302,6 +309,7 @@ section#protein .protein-aminoacidprofile table tr td:last-child {
 
 section#contact address {
   padding-top: 6px;
+  font-size: 13px;
 }
 
 footer {
@@ -315,33 +323,43 @@ em {
 
 .carousel-caption h1 {
   font-size: 19px;
-  margin:26px 0 0 0;
+  margin: 26px 0 0 0;
 }
-.carousel-caption .btn{
-	font-size:15px;
-	padding: 6px 15px;	
+
+.carousel-caption .btn {
+  font-size: 15px;
+  padding: 6px 15px;
 }
+
 .carousel-caption p {
-	/*font-size:1.2vw;*/
-	font-size:18.5px;
-	padding-bottom:8px;
+  /*font-size: 1.2vw;*/
+  font-size: 18.5px;
+  padding-bottom: 8px;
 }
+
 .carousel-indicators {
   bottom: 0;
 }
 
-.carousel-inner{
-	width:100%;
-	height:100%;
-	position:relative;	
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.product-list-container a,
+.product-list-container a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 /* desktop and tablet layout */
 @media only screen and (min-width: 640px) {
   h1,
- .carousel-caption h1  {
+ .carousel-caption h1 {
     font-size: 44px
   }
+
   h2 {
     font-size: 38px;
     /*font-size: 3.65vw;*/
@@ -382,23 +400,27 @@ em {
     /* padding-top: 15px; comes from navbar-nav>li>a */
   }
 
-
   main {
     margin-top: 128px;
   }
-	section .container{
-		width:1055px;	
-	}
-	.row{
-		margin:0 auto;
-		width:82.5%;	
-	}
-	.row.bottle{
-		width:100%;	
-	}
-	div.bottle-image{
-		margin:-60px 0 0 20px;	
-	}
+
+  section .container {
+    width: 1055px;
+  }
+
+  .row {
+    margin: 0 auto;
+    width: 82.5%;
+  }
+
+  .row.bottle {
+    width: 100%;
+  }
+
+  div.bottle-image {
+    margin: -60px 0 0 20px;
+  }
+
   section#slides {
 /*    height: 527px;*/
   }
@@ -406,30 +428,31 @@ em {
   section#products {
     background-image: url(../images/backgrounds/products-background.jpg);
     background-size: cover;
-	width:100%;
-	/*padding-bottom:52%;*/
-	 height: 527px;
-   
+    width: 100%;
+    /*padding-bottom: 52%;*/
+     height: 527px;
   }
 
-  section#products .container{
-/*	  position:absolute;
-	  width:100%;
-	  height:100%;  */
+  section#products .container {
+    /* position:absolute;
+    width:100%;
+    height:100%; */
   }
+
   section#protein {
-    height: 2300px; /*1951px; increased to account for aminco acid table */
+    height: 2400px; /*1951px; increased to account for aminco acid table */
     background-image: url(../images/backgrounds/protein-background.jpg);
     background-size: cover;
     padding-top: 32px;
-
   }
-	section#protein .row .boost{
-		padding-left: 0px;
-		margin-top:103px;
-	}
+
+  section#protein .row .boost {
+    padding-left: 0;
+    margin-top: 103px;
+  }
+
   section#jointhealth {
-    height: 1860px;
+    height: 1920px; /*1860px;*/
     background-image: url(../images/backgrounds/joint-health-background.jpg);
     background-size: cover;
     padding-top: 40px;
@@ -441,13 +464,15 @@ em {
     background-size: cover;
     padding-top: 26px;
   }
-section#about h2,
-section#join h2,
-section#contact h2{
-	float:left;
-	display:inline;
-	margin-right:20px;
-}
+
+  section#about h2,
+  section#join h2,
+  section#contact h2 {
+    float: left;
+    display: inline;
+    margin-right: 20px;
+  }
+
   section#join {
     height: 568px;
     background-image: url(../images/backgrounds/join-d2a-background.jpg);
@@ -463,11 +488,11 @@ section#contact h2{
   }
 
   section#protein .product-summary ul,
-  section#jointhealth .product-summary ul{
+  section#jointhealth .product-summary ul {
     line-height: 2.5em;
     padding-top: 80px;
-	padding-left:0;
-	margin-left:-60px;
+    padding-left:0;
+    margin-left:-60px;
   }
 
   /* From http://getbootstrap.com/examples/carousel/carousel.css */
@@ -479,9 +504,9 @@ section#contact h2{
   .carousel-caption {
     top: 30%;
     z-index: 10;
-	width:100%;
-	text-align:center;
-	height:200px;
+    width: 100%;
+    text-align: center;
+    height: 200px;
   }
   /* Declare heights because of positioning of img element */
   .carousel .item {
@@ -507,238 +532,284 @@ section#contact h2{
   section#products .d2a-chevrons {
     margin-top: -140px;
   }
-  section#join .mc-field-group label{
-	  font-weight:normal;
-	  text-align:right;
-	  float:left;
-	  display:inline;
-	  width:79px;
-	  padding-right:5px;
-	  font-size:10px;
-	  line-height:10px;
+
+  section#join .mc-field-group label {
+    font-weight: normal;
+    text-align: right;
+    float: left;
+    display: inline;
+    width: 79px;
+    padding-right: 5px;
+    font-size: 10px;
+    line-height: 10px;
   }
-  section#join .mc-field-group input{
-		width:193px;
-		height:25px;  
+
+  section#join .mc-field-group input {
+    width: 193px;
+    height: 25px;
   }
-  section#join .mc-field-group .asterisk{
-	  right:45px;  
-	  top:10px;
+
+  section#join .mc-field-group .asterisk {
+    right: 45px;
+    top: 10px;
   }
-  section#join #mc_embed_signup form{
-	  padding-top:0;  
-	padding-left:0px;  
+
+  section#join #mc_embed_signup form {
+    padding-top: 0;
+    padding-left: 0;
   }
-  section#join .indicates-required{
-	  margin-right:50px;
+
+  section#join .indicates-required {
+    margin-right: 50px;
   }
+
   section#join .mc-field-group {
-	  min-height:25px;
-	  padding-bottom:3%;
+    min-height: 25px;
+    padding-bottom: 3%;
   }
 }
 
 body.debug section#products {
-	background-image: url(../images/backgrounds/debug-products-background.jpg);
+  background-image: url(../images/backgrounds/debug-products-background.jpg);
 }
 section#slides {
-	min-height:527px;
-}
-body.debug section#slides div.item.active img{
-	opacity:0;
+  min-height: 527px;
 }
 
-body.debug section#slides{
-	background: url(../images/backgrounds/debug-index-slide1.jpg) no-repeat top center !important;
+body.debug section#slides div.item.active img {
+  opacity: 0;
 }
-body.debug section#slides .carousel-caption{
-	background:rgba(0,0,0,0);	
+
+body.debug section#slides {
+  background: url(../images/backgrounds/debug-index-slide1.jpg) no-repeat top center !important;
 }
+
+body.debug section#slides .carousel-caption {
+  background:rgba(0,0,0,0);
+}
+
 body.debug {
-	background: url(../images/backgrounds/debug-D2A-website-desktop.jpg) no-repeat center 349px !important;
-}
-body.debug section, body.debug section#slides .item.active, body.debug section#slides{
-	background:transparent !important;	
+  background: url(../images/backgrounds/debug-D2A-website-desktop.jpg) no-repeat center 349px !important;
 }
 
-@media all and (max-width:640px){
-	.navbar-fixed-top{
-		height:169px;	
-	}
-	.navbar-default .navbar-brand{
-		float:left;
-		width:100%;
-		display:inline;
-		text-align:center;
-		
-	}
-	.navbar-default .navbar-brand img{
-		
-		height:100px;
-	}
-	.carousel-caption{
-		top:32%;
-		padding:0 15%;	
-	}
-	.row,
-	.col-md-5{
-		width:100% !important;
-		max-width:310px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.row.product-title p, .row p,
-	.col-md-5,
-	section#jointhealth .subtitle{
-		padding-left:0;
-		padding-right:0;	
-		margin-left:0;
-		margin-right:0;
-	}
-	#product-list-protein{
-		background-position:-10px 0px;
-		padding-left:110px;
-		width: 266px;	
-		height:228px;
-	}
-	#product-list-protein h3, 
-	#product-list-protein p{
-		width:150px;
-	}
-	
-	#product-list-jointhealth{
-	height:240px;	
-	}
-	section#protein .col-md-5,
-	.col-md-5,
-	.row ul,
-	section#jointhealth .subtitle{
-		padding-left:15px;
-		padding-right:15px;
-			
-	}
-	.product-detail-links .btn{
-		width:280px;
-		font-size:24px;
-		padding:15px 0 15px 60px;
-	}
-	.row.product-detail-links div{
-		padding-bottom:16px;	
-	}
-	section#protein h4{
-		padding-top:10px;	
-		font-size:24px;
-		line-height:24px;
-	}
-	section#protein .text-center{
-		padding:30px 0;	
-	}
-	.modal-content img{
-		width:100%;
-	}
-	#mc_embed_signup input[type="text"]{
-		width:100%;
-	}
-	.row.product-list-container{
-		margin-top:50px;
-	}
-	.row.product-list-container .col-md-5{
-		padding:0px;
-	}
-	section#products{
-		padding-bottom:10px;	
-	}
-	section#protein{
-		background-position:top center;
-		padding-top:40px;	
-	}
-	
-	body.debug {
-		background: url(../images/backgrounds/debug-D2A-website-mobile.jpg) no-repeat center top !important;
-	}
-	.carousel .item, section#slides{
-		min-height:355px;	
-		padding-top:120px;
-	}
-	section{
-		padding-top:12px;	
-	}
-	section h2{
-		font-size:44px;
-		margin-bottom:0px;
-	}
-	section p{
-		font-size:18px;	
-		line-height:22px;
-	}
-	.carousel-caption h1{
-		font-size:33px;	
-		margin-top:15px;
-	}
-	.carousel-control{
-		min-height:355px;
-		margin-top:122px;
-	}
-	section#protein h2,
-	section#protein h3,
-	section#jointhealth h3{
-		font-size:27px;
-	}
-	section#protein h2 span,
-	section#protein h3 span,
-	section#jointhealth h3 span{
-		font-size:44px;
-	}
-	section#protein .boost p{
-		font-size:15px;	
-	}
-	
-	section#protein .boost img{
-		width:275px;	
-	}
-	section .row ul{
-		font-size: 15px;	
-	}
-	section .row.bottle ul{
-		font-size:17px;
-	}
-	section#jointhealth .subtitle{
-		margin-top:10px;	
-	}
-	.bottle-image{
-		height:370px;	
-	}
-	section#jointhealth .subtitle p{
-		font-size:15px;	
-	}
-	section#jointhealth .subtitle p img{
-		margin:10px auto;
-		display:block;
-		width:160px;
-	}
-	footer{
-		text-align:center;	
-	}
-	section#join{
-		margin-bottom:20px;	
-	}
+body.debug section,
+body.debug section#slides .item.active,
+body.debug section#slides {
+  background:transparent !important;
 }
-@media all and (min-width:768px){
-	.navbar-right {
-		text-align: right;
-	}
-	
-	.navbar-right button {
-		margin-top: 15px;
-	}
-	.social-buttons {
-		padding-top: 27px;
-		float: none;
-	}
 
+@media all and (max-width:640px) {
+  .navbar-fixed-top {
+  height: 169px;
+  }
 
+  .navbar-default .navbar-brand {
+    float: left;
+    width: 100%;
+    display: inline;
+    text-align: center;
+  }
+
+  .navbar-default .navbar-brand img {
+    height: 100px;
+  }
+
+  .carousel-caption {
+    top: 32%;
+    padding: 0 15%;
+  }
+
+  .row,
+  .col-md-5 {
+    width: 100% !important;
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .row.product-title p, .row p,
+  .col-md-5,
+  section#jointhealth .subtitle {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #product-list-protein {
+    background-position: -10px 0;
+    padding-left: 110px;
+    width: 266px;
+    height: 228px;
+  }
+
+  #product-list-protein h3,
+  #product-list-protein p {
+    width: 150px;
+  }
+
+  #product-list-jointhealth {
+    height: 240px;
+  }
+
+  section#protein .col-md-5,
+  .col-md-5,
+  .row ul,
+  section#jointhealth .subtitle {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .product-detail-links .btn {
+    width: 280px;
+    font-size: 24px;
+    padding: 15px 0 15px 60px;
+  }
+
+  .row.product-detail-links div {
+    padding-bottom: 16px;
+  }
+
+  section#protein h4 {
+    padding-top: 10px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  section#protein .text-center {
+    padding:30px 0;
+  }
+
+  .modal-content img {
+    width:100%;
+  }
+
+  #mc_embed_signup input[type="text"] {
+    width: 100%;
+  }
+
+  .row.product-list-container {
+    margin-top: 50px;
+  }
+
+  .row.product-list-container .col-md-5 {
+    padding: 0;
+  }
+
+  section#products {
+    padding-bottom: 10px;
+  }
+
+  section#protein {
+    background-position: top center;
+    padding-top: 40px;
+  }
+
+  body.debug {
+    background: url(../images/backgrounds/debug-D2A-website-mobile.jpg) no-repeat center top !important;
+  }
+
+  .carousel .item,
+  section#slides {
+    min-height: 355px;
+    padding-top: 120px;
+  }
+
+  section {
+    padding-top: 12px;
+  }
+
+  section h2 {
+    font-size: 44px;
+    margin-bottom: 0;
+  }
+
+  section p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 33px;
+    margin-top: 15px;
+  }
+
+  .carousel-control {
+    min-height: 355px;
+    margin-top: 122px;
+  }
+
+  section#protein h2,
+  section#protein h3,
+  section#jointhealth h3 {
+    font-size: 27px;
+  }
+
+  section#protein h2 span,
+  section#protein h3 span,
+  section#jointhealth h3 span {
+    font-size: 44px;
+  }
+
+  section#protein .boost p {
+    font-size: 15px;
+  }
+
+  section#protein .boost img {
+    width: 275px;
+  }
+
+  section .row ul {
+    font-size: 15px;
+  }
+
+  section .row.bottle ul {
+    font-size: 17px;
+  }
+
+  section#jointhealth .subtitle {
+    margin-top: 10px;
+  }
+
+  .bottle-image {
+    height: 370px;
+  }
+
+  section#jointhealth .subtitle p {
+    font-size: 15px;
+  }
+
+  section#jointhealth .subtitle p img {
+    margin: 10px auto;
+    display: block;
+    width: 160px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  section#join {
+    margin-bottom: 20px;
+  }
 }
-@media all and (width:768px){
+
+@media all and (min-width:768px) {
+  .navbar-right {
+    text-align: right;
+  }
+
+  .navbar-right button {
+    margin-top: 15px;
+  }
+
+  .social-buttons {
+    padding-top: 27px;
+    float: none;
+  }
+}
+
+@media all and (width:768px) {
 	header, main, section{
 		max-width:768px;
 		overflow:hidden;
@@ -753,102 +824,124 @@ body.debug section, body.debug section#slides .item.active, body.debug section#s
 		right:0px;	
 	}
 }
-@media all and (min-width:640px)
-and (max-width:992px){
-	section .container{
-		width:100%;	
-	}
-	h2{
-		font-size:29px;	
-	}
-	.product-list-container .col-md-1{
-		display:none;
-	}
-	.product-list-container .col-md-5{
-		margin-right:30px;
-	}
-	section#products{
-		height:577px;	
-	}
-	section#protein .row .boost{
-		margin-left:60px;
-		margin-top:64px;
-	}
-	.row.product-detail-links .col-md-4{
-		float:none;
-		margin:10px auto;
-		width:250px;
-	}
-	.protein-aminoacidprofile{
-		width:100%;	
-	}
-	section#protein{
-	height:3270px;	
-	}
-	section#jointhealth{
-		height:2300px;	
-	}
-	section#about{
-		height:707px;
-	}
-	section#join{
-		height:638px;
-	}
-	section#contact .col-md-6{
-		margin-left:30px;
-	}
-	section#join .mc-field-group label{
-		text-align:left;
-		font-size:12px;
-		width:180px;
-	}
-	section#join .mc-field-group .asterisk{
-		top:24px;
-		right:27px;	
-	}
-	section#join .mc-field-group{
-		padding-bottom:4%;	
-	}
-	nav.navbar-collapse{
-		position:absolute;
-		top:0px;
-		right: 20px;
-	}
-	section#products .row.product-title .col-md-7{
-		margin-left:20px;
-	}
-}
-@media all and (max-width:768px){
 
-	header div.container,
-	header .navbar-collapse {
-		background:#f8f8f8;	
-	}
-	header .navbar-header{
-		height:170px;	
-	}
-	.navbar-nav>li>a{
-		text-align:center;
-		font-size:20px;	
-	}	
-	.navbar-default .navbar-collapse{
-		top:170px;
-		position:absolute;
-		width:100%;
-		right: auto;
-	}
-	.navbar-default .navbar-collapse ul li a{
-		margin-top:0px;
-	}
-	.navbar-default .navbar-brand{
-		float:left;
-		width:100%;
-		display:inline;
-		text-align:center;
-		padding-top:0px;
-	}
-	.navbar-default .navbar-brand img{
-		
-		height:100px;
-	}
+@media all and (min-width:640px) and (max-width:992px) {
+  section .container {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 29px;
+  }
+
+  .product-list-container .col-md-1 {
+    display: none;
+  }
+
+  .product-list-container .col-md-5 {
+    margin-right: 30px;
+  }
+
+  section#products {
+    height: 577px;
+  }
+
+  section#protein .row .boost {
+    margin-left: 60px;
+    margin-top: 64px;
+  }
+
+  .row.product-detail-links .col-md-4 {
+    float: none;
+    margin: 10px auto;
+    width: 250px;
+  }
+
+  .protein-aminoacidprofile {
+    width:100%;
+  }
+
+  section#protein {
+    height: 3270px;
+  }
+
+  section#jointhealth {
+    height: 2300px;
+  }
+
+  section#about {
+    height: 707px;
+  }
+
+  section#join {
+    height: 638px;
+  }
+
+  section#contact .col-md-6 {
+    margin-left: 30px;
+  }
+
+  section#join .mc-field-group label {
+    text-align: left;
+    font-size: 12px;
+    width: 180px;
+  }
+
+  section#join .mc-field-group .asterisk {
+    top: 24px;
+    right: 27px;
+  }
+
+  section#join .mc-field-group {
+    padding-bottom: 4%;
+  }
+
+  nav.navbar-collapse {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+
+  section#products .row.product-title .col-md-7 {
+    margin-left: 20px;
+  }
+}
+
+@media all and (max-width:768px) {
+  header div.container,
+  header .navbar-collapse {
+    background: #f8f8f8;
+  }
+
+  header .navbar-header {
+    height: 170px;
+  }
+
+  .navbar-nav>li>a {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .navbar-default .navbar-collapse {
+    top: 170px;
+    position: absolute;
+    width: 100%;
+    right: auto;
+  }
+
+  .navbar-default .navbar-collapse ul li a {
+    margin-top: 0;
+  }
+
+  .navbar-default .navbar-brand {
+    float: left;
+    width: 100%;
+    display: inline;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .navbar-default .navbar-brand img {
+    height: 100px;
+  }
 }
