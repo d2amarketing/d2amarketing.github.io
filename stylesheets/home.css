@@ -382,18 +382,6 @@ em {
     /* padding-top: 15px; comes from navbar-nav>li>a */
   }
 
-  .navbar-right {
-    text-align: right;
-  }
-
-  .navbar-right button {
-    margin-top: 15px;
-  }
-
-  .social-buttons {
-    padding-top: 27px;
-    float: none;
-  }
 
   main {
     margin-top: 128px;
@@ -572,6 +560,7 @@ body.debug {
 body.debug section, body.debug section#slides .item.active, body.debug section#slides{
 	background:transparent !important;	
 }
+
 @media all and (max-width:640px){
 	.navbar-fixed-top{
 		height:169px;	
@@ -619,16 +608,6 @@ body.debug section, body.debug section#slides .item.active, body.debug section#s
 	
 	#product-list-jointhealth{
 	height:240px;	
-	}
-	header div.container{
-		background:#f8f8f8;	
-	}
-	header .navbar-header{
-		height:170px;	
-	}
-	.navbar-nav>li>a{
-		text-align:center;
-		font-size:20px;	
 	}
 	section#protein .col-md-5,
 	.col-md-5,
@@ -744,11 +723,27 @@ body.debug section, body.debug section#slides .item.active, body.debug section#s
 		margin-bottom:20px;	
 	}
 }
+@media all and (min-width:768px){
+	.navbar-right {
+		text-align: right;
+	}
+	
+	.navbar-right button {
+		margin-top: 15px;
+	}
+	.social-buttons {
+		padding-top: 27px;
+		float: none;
+	}
+
+
+}
 @media all and (width:768px){
 	header, main, section{
 		max-width:768px;
 		overflow:hidden;
 	}
+	
 }
 @media all and (min-width:640px)
 and (max-width:992px){
@@ -809,6 +804,40 @@ and (max-width:992px){
 	nav.navbar-collapse{
 		position:absolute;
 		top:0px;
-		right: 20px;	
+		right: 20px;
+	}
+}
+@media all and (max-width:768px){
+
+	header div.container,
+	header .navbar-collapse {
+		background:#f8f8f8;	
+	}
+	header .navbar-header{
+		height:170px;	
+	}
+	.navbar-nav>li>a{
+		text-align:center;
+		font-size:20px;	
+	}	
+	.navbar-default .navbar-collapse{
+		top:170px;
+		position:absolute;
+		width:100%;
+		right: auto;
+	}
+	.navbar-default .navbar-collapse ul li a{
+		margin-top:0px;
+	}
+	.navbar-default .navbar-brand{
+		float:left;
+		width:100%;
+		display:inline;
+		text-align:center;
+		padding-top:0px;
+	}
+	.navbar-default .navbar-brand img{
+		
+		height:100px;
 	}
 }
