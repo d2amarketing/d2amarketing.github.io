@@ -23,34 +23,36 @@
      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
 <script>
-	window.onload = function(){
-		window.debug=false;
-		window.onkeydown = function(e){
-			if(e.keyCode == 68 && window.debug == true){
-				if (document.body.hasClass("debug")){
-					document.body.removeClass("debug");
-				}else{
-					document.body.addClass("debug");
-				}
-			}
-		}
-	}
-	
-	Element.prototype.hasClass = function (className) {
-		return new RegExp(' ' + className + ' ').test(' ' + this.className + ' ');
-	};
-	Element.prototype.addClass = function (className) {
-		if (!this.hasClass(className)) { this.className += ' ' + className; }
-	};
-	Element.prototype.removeClass = function (className) {
-		var newClass = ' ' + this.className.replace(/[\t\r\n]/g, ' ') + ' ';
-		if (this.hasClass(className)) {
-			while (newClass.indexOf( ' ' + className + ' ') >= 0) {
-				newClass = newClass.replace(' ' + className + ' ', ' ');
-			}
-			this.className = newClass.replace(/^\s+|\s+$/g, ' ');
-		}
-	};
+window.onload = function() {
+  window.debug = false;
+  window.onkeydown = function (e) {
+    if (e.keyCode == 68 && window.debug == true) {
+      if (document.body.hasClass("debug")) {
+        document.body.removeClass("debug");
+      } else {
+        document.body.addClass("debug");
+      }
+    }
+  }
+}
+
+Element.prototype.hasClass = function (className) {
+  return new RegExp(' ' + className + ' ').test(' ' + this.className + ' ');
+};
+
+Element.prototype.addClass = function (className) {
+  if (!this.hasClass(className)) { this.className += ' ' + className; }
+};
+
+Element.prototype.removeClass = function (className) {
+  var newClass = ' ' + this.className.replace(/[\t\r\n]/g, ' ') + ' ';
+  if (this.hasClass(className)) {
+    while (newClass.indexOf( ' ' + className + ' ') >= 0) {
+      newClass = newClass.replace(' ' + className + ' ', ' ');
+    }
+    this.className = newClass.replace(/^\s+|\s+$/g, ' ');
+  }
+};
 </script>
 <!--
 <script src="http://192.168.0.20:8080/target/target-script-min.js#anonymous"></script>
@@ -89,17 +91,14 @@
           <li>
             <a href="https://twitter.com/d2amarketing" class="social-button"><img src="images/twitter.png" alt="Twitter"></a>
           </li>
-
           <!-- Facebook -->
           <li>
             <a href="https://www.facebook.com/d2amarketing" class="social-button"><img src="images/facebook.png" alt="Facebook"></a>
           </li>
-
           <!-- Instagram -->
           <li>
-            <a href="http://instagram.com/direct2athlete?ref=badge" class="ig-b- ig-b-32 social-button"><img src="//badges.instagram.com/static/images/ig-badge-32.png" alt="Instagram" /></a>
-        </li>
-
+            <a href="http://instagram.com/direct2athlete?ref=badge" class="ig-b- ig-b-32 social-button"><img src="//badges.instagram.com/static/images/ig-badge-32.png" alt="Instagram"></a>
+          </li>
           <!-- LinkedIn -->
           <li>
             <a href="http://www.linkedin.com/company/5090894" class="social-button"><img src="images/linkedin.png" alt="LinkedIn"></a>
@@ -165,29 +164,21 @@
       <div class="row product-list-container">
         <div class="col-md-1"></div>
         <div class="col-md-5">
-          <div id="product-list-protein">
-            <h3 class="product-name">Advanced Performance<br><span>PROTEIN</span></h3>
-            <p class="product-purpose">BOOST, PERFORM, ENDURE & RECOVER</p>
-            <!--
-            gluten free
-            non gmo
-            soy free
-            grass fed
-            100% pure
-            -->
-          </div>
+          <a href="#protein" class="animatefragment">
+            <div id="product-list-protein">
+              <h3 class="product-name">Advanced Performance<br><span>PROTEIN</span></h3>
+              <p class="product-purpose">BOOST, PERFORM, ENDURE &amp; RECOVER</p>
+            </div>
+          </a>
         </div>
 
         <div class="col-md-5">
-          <div id="product-list-jointhealth">
-            <h3 class="product-name">Advanced Performance<br><span>JOINT HEALTH</span></h3>
-            <p class="product-purpose">REDUCE, TARGET, PREVENT & PERFORM</p>
-            <!--
-            gluten free
-            non gmo
-            soy free
-            -->
-          </div>
+          <a href="#jointhealth" class="animatefragment">
+            <div id="product-list-jointhealth">
+              <h3 class="product-name">Advanced Performance<br><span>JOINT HEALTH</span></h3>
+              <p class="product-purpose">REDUCE, TARGET, PREVENT &amp; PERFORM</p>
+            </div>
+          </a>
         </div>
         <div class="col-md-1"></div>
       </div>
@@ -204,7 +195,7 @@
         </div>
         <div class="col-md-5 boost">
           <p>
-            BOOST, PERFORM, ENDURE, RECOVER<br>
+            BOOST. PERFORM. ENDURE. RECOVER.<br>
             <img src="images/protein-icons.png" alt="gluten free, non gmo, soy free, grass fed, 100% pure">
           </p>
         </div>
@@ -379,7 +370,7 @@
         </div>
         <div class="col-md-5 subtitle">
           <p>
-            TARGET, REDUCE, PREVENT, PERFORM<br>
+            TARGET. REDUCE. PREVENT. PERFORM.<br>
             <img src="images/jointhealth-icons.png" alt="gluten free, non gmo, soy free">
           </p>
         </div>
@@ -510,28 +501,28 @@
           <!-- Begin MailChimp Signup Form -->
           <div id="mc_embed_signup">
             <form action="http://d-2a.us3.list-manage.com/subscribe/post?u=15771c1be9dd09bf01af1478f&amp;id=9b94d8b9bb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-            <div class="mc-field-group">
-            	<label for="mce-FNAME">First Name  <span class="asterisk">*</span> </label>
-            	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
-            </div>
-            <div class="mc-field-group">
-            	<label for="mce-LNAME">Last Name  <span class="asterisk">*</span> </label>
-            	<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
-            </div>
-            <div class="mc-field-group">
-            	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> </label>
-            	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-            </div>
-            <div class="mc-field-group">
-            	<label for="mce-MMERGE8">Expertise in Fitness  <span class="asterisk">*</span> </label>
-            	<input type="text" value="" name="MMERGE8" class="required" id="mce-MMERGE8">
-            </div>
-            	<div id="mce-responses" class="clear">
-            		<div class="response" id="mce-error-response" style="display:none"></div>
-            		<div class="response" id="mce-success-response" style="display:none"></div>
-            	</div>
-            	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+              <div class="mc-field-group">
+                <label for="mce-FNAME">First Name  <span class="asterisk">*</span> </label>
+                <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-LNAME">Last Name  <span class="asterisk">*</span> </label>
+                <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> </label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-MMERGE8">Expertise in Fitness  <span class="asterisk">*</span> </label>
+                <input type="text" value="" name="MMERGE8" class="required" id="mce-MMERGE8">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;"><input type="text" name="b_15771c1be9dd09bf01af1478f_9b94d8b9bb" tabindex="-1" value=""></div>
               <div class="clear"><button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">Subscribe</button></div>
             </form>
@@ -590,20 +581,20 @@
           <div id="mc_embed_signup">
             <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
             <div class="mc-field-group">
-            	<label for="mce-EMAIL">Email Address <span class="asterisk">*</span> </label>
-            	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+              <label for="mce-EMAIL">Email Address <span class="asterisk">*</span> </label>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
             </div>
             <div class="mc-field-group">
-            	<label for="mce-FNAME">First Name </label>
-            	<input type="text" value="" name="FNAME" id="mce-FNAME">
+              <label for="mce-FNAME">First Name </label>
+              <input type="text" value="" name="FNAME" id="mce-FNAME">
             </div>
             <div class="mc-field-group">
-            	<label for="mce-LNAME">Last Name </label>
-            	<input type="text" value="" name="LNAME" id="mce-LNAME">
+              <label for="mce-LNAME">Last Name </label>
+              <input type="text" value="" name="LNAME" id="mce-LNAME">
             </div>
             <div id="mce-responses" class="clear">
-            	<div class="response" id="mce-error-response" style="display:none"></div>
-            	<div class="response" id="mce-success-response" style="display:none"></div>
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
             </div>
             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;"><input type="text" name="b_15771c1be9dd09bf01af1478f_2df5c8ab67" tabindex="-1" value=""></div>
@@ -662,7 +653,7 @@ ga('send', 'pageview');
 				offset -= 50;
 			}
 			var init_offset = $("body").scrollTop();
-			
+
 			window.location.hash = location;
 			$("body").scrollTop(init_offset);
 			var anim_duration = 500;

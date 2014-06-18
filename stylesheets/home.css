@@ -309,6 +309,7 @@ section#protein .protein-aminoacidprofile table tr td:last-child {
 
 section#contact address {
   padding-top: 6px;
+  font-size: 13px;
 }
 
 footer {
@@ -344,6 +345,12 @@ em {
   width: 100%;
   height: 100%;
   position: relative;
+}
+
+.product-list-container a,
+.product-list-container a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 /* desktop and tablet layout */
@@ -433,7 +440,7 @@ em {
   }
 
   section#protein {
-    height: 2300px; /*1951px; increased to account for aminco acid table */
+    height: 2400px; /*1951px; increased to account for aminco acid table */
     background-image: url(../images/backgrounds/protein-background.jpg);
     background-size: cover;
     padding-top: 32px;
@@ -445,7 +452,7 @@ em {
   }
 
   section#jointhealth {
-    height: 1860px;
+    height: 1920px; /*1860px;*/
     background-image: url(../images/backgrounds/joint-health-background.jpg);
     background-size: cover;
     padding-top: 40px;
