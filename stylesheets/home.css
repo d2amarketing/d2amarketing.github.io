@@ -312,6 +312,10 @@ section#contact address {
   font-size: 13px;
 }
 
+section#contact a {
+  color: white;
+}
+
 footer {
   text-align: right;
 }
