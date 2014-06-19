@@ -130,11 +130,11 @@ function mce_init_form(){
     });
 }
 function mce_success_cb(resp){
-    $('#mce-success-response').hide();
-    $('#mce-error-response').hide();
+    $('#mce-success-response-trainers').hide();
+    $('#mce-error-response-trainers').hide();
     if (resp.result=="success"){
-        $('#mce-'+resp.result+'-response').show();
-        $('#mce-'+resp.result+'-response').html(resp.msg);
+        $('#mce-'+resp.result+'-response-trainers').show();
+        $('#mce-'+resp.result+'-response-trainers').html(resp.msg);
         $('#mc-embedded-subscribe-form-trainers').each(function(){
             this.reset();
     	});
@@ -161,8 +161,8 @@ function mce_success_cb(resp){
         }
         try{
             if (index== -1){
-                $('#mce-'+resp.result+'-response').show();
-                $('#mce-'+resp.result+'-response').html(msg);
+                $('#mce-'+resp.result+'-response-trainers').show();
+                $('#mce-'+resp.result+'-response-trainers').html(msg);
             } else {
                 err_id = 'mce_tmp_error_msg';
                 html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
@@ -183,13 +183,13 @@ function mce_success_cb(resp){
                     $(f).append(html);
                     $(input_id).focus();
                 } else {
-                    $('#mce-'+resp.result+'-response').show();
-                    $('#mce-'+resp.result+'-response').html(msg);
+                    $('#mce-'+resp.result+'-response-trainers').show();
+                    $('#mce-'+resp.result+'-response-trainers').html(msg);
                 }
             }
         } catch(e){
-            $('#mce-'+resp.result+'-response').show();
-            $('#mce-'+resp.result+'-response').html(msg);
+            $('#mce-'+resp.result+'-response-trainers').show();
+            $('#mce-'+resp.result+'-response-trainers').html(msg);
         }
     }
 }
@@ -325,11 +325,11 @@ function mce_init_form2(){
     });
 }
 function mce_success_cb2(resp){
-    $('#mce-success-response').hide();
-    $('#mce-error-response').hide();
+    $('#mce-success-response-news').hide();
+    $('#mce-error-response-news').hide();
     if (resp.result=="success"){
-        $('#mce-'+resp.result+'-response').show();
-        $('#mce-'+resp.result+'-response').html(resp.msg);
+        $('#mce-'+resp.result+'-response-news').show();
+        $('#mce-'+resp.result+'-response-news').html(resp.msg);
         $('#mc-embedded-subscribe-form-news').each(function(){
             this.reset();
     	});
@@ -356,8 +356,8 @@ function mce_success_cb2(resp){
         }
         try{
             if (index== -1){
-                $('#mce-'+resp.result+'-response').show();
-                $('#mce-'+resp.result+'-response').html(msg);
+                $('#mce-'+resp.result+'-response-news').show();
+                $('#mce-'+resp.result+'-response-news').html(msg);
             } else {
                 err_id = 'mce_tmp_error_msg';
                 html = '<div id="'+err_id+'" style="'+err_style2+'"> '+msg+'</div>';
@@ -365,26 +365,26 @@ function mce_success_cb2(resp){
                 var input_id = '#mc_embed_signup_news';
                 var f = $(input_id);
                 if (ftypes2[index]=='address'){
-                    input_id = '#mce-'+fnames2[index]+'-addr1';
+                    input_id = '#mce2-'+fnames2[index]+'-addr1';
                     f = $(input_id).parent().parent().get(0);
                 } else if (ftypes2[index]=='date'){
-                    input_id = '#mce-'+fnames2[index]+'-month';
+                    input_id = '#mce2-'+fnames2[index]+'-month';
                     f = $(input_id).parent().parent().get(0);
                 } else {
-                    input_id = '#mce-'+fnames2[index];
+                    input_id = '#mce2-'+fnames2[index];
                     f = $().parent(input_id).get(0);
                 }
                 if (f){
                     $(f).append(html);
                     $(input_id).focus();
                 } else {
-                    $('#mce-'+resp.result+'-response').show();
-                    $('#mce-'+resp.result+'-response').html(msg);
+                    $('#mce-'+resp.result+'-response-news').show();
+                    $('#mce-'+resp.result+'-response-news').html(msg);
                 }
             }
         } catch(e){
-            $('#mce-'+resp.result+'-response').show();
-            $('#mce-'+resp.result+'-response').html(msg);
+            $('#mce-'+resp.result+'-response-news').show();
+            $('#mce-'+resp.result+'-response-news').html(msg);
         }
     }
 }
