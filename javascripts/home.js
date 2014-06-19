@@ -22,7 +22,7 @@ if (!jqueryLoaded) {
     if (script.readyState && script.onload!==null){
         script.onreadystatechange= function () {
               if (this.readyState == 'complete') mce_preload_check();
-        }    
+        }
     }
 }
 
@@ -68,8 +68,8 @@ function mce_preload_check(){
 function mce_init_form(){
     jQuery(document).ready( function($) {
       var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
-      var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
-      $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+      var mce_validator = $("#mc-embedded-subscribe-form-trainers").validate(options);
+      $("#mc-embedded-subscribe-form-trainers").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
       options = { url: 'http://d-2a.us3.list-manage1.com/subscribe/post-json?u=15771c1be9dd09bf01af1478f&id=9b94d8b9bb&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
                     beforeSubmit: function(){
                         $('#mce_tmp_error_msg').remove();
@@ -90,17 +90,16 @@ function mce_init_form(){
                                             bday = true;
                                             fields[2] = {'value':1970};//trick birthdays into having years
                                         }
-                                    	if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
-                                    		this.value = '';
-									    } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
-                                    		this.value = '';
-									    } else {
-									        if (/\[day\]/.test(fields[0].name)){
-    	                                        this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;									        
-									        } else {
-    	                                        this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
-	                                        }
-	                                    }
+                                        if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+                                          this.value = '';
+                                          } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+                                            } else {
+                                              if (/\[day\]/.test(fields[0].name)){
+                                                this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;
+                                                } else {
+                                                  this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+                                                }
+                                              }
                                     });
                             });
                         $('.phonefield-us','#mc_embed_signup_trainers').each(
@@ -115,19 +114,19 @@ function mce_init_form(){
                                 $(':hidden', this).each(
                                   function(){
                                         if ( fields[0].value.length != 3 || fields[1].value.length!=3 || fields[2].value.length!=4 ){
-                                    		this.value = '';
-									    } else {
-									        this.value = 'filled';
-	                                    }
+                                          this.value = '';
+                                        } else {
+                                          this.value = 'filled';
+                                        }
                                     });
                             });
                         return mce_validator.form();
-                    }, 
+                    },
                     success: mce_success_cb
                 };
-      $('#mc-embedded-subscribe-form').ajaxForm(options);
-      
-      
+      $('#mc-embedded-subscribe-form-trainers').ajaxForm(options);
+
+
     });
 }
 function mce_success_cb(resp){
@@ -136,7 +135,7 @@ function mce_success_cb(resp){
     if (resp.result=="success"){
         $('#mce-'+resp.result+'-response').show();
         $('#mce-'+resp.result+'-response').html(resp.msg);
-        $('#mc-embedded-subscribe-form').each(function(){
+        $('#mc-embedded-subscribe-form-trainers').each(function(){
             this.reset();
     	});
     } else {
@@ -163,11 +162,11 @@ function mce_success_cb(resp){
         try{
             if (index== -1){
                 $('#mce-'+resp.result+'-response').show();
-                $('#mce-'+resp.result+'-response').html(msg);            
+                $('#mce-'+resp.result+'-response').html(msg);
             } else {
                 err_id = 'mce_tmp_error_msg';
                 html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
-                
+
                 var input_id = '#mc_embed_signup_trainers';
                 var f = $(input_id);
                 if (ftypes[index]=='address'){
@@ -217,7 +216,7 @@ if (!jqueryLoaded) {
     if (script.readyState && script.onload!==null){
         script.onreadystatechange= function () {
               if (this.readyState == 'complete') mce_preload_check();
-        }    
+        }
     }
 }
 
@@ -263,8 +262,8 @@ function mce_preload_check2(){
 function mce_init_form2(){
     jQuery(document).ready( function($) {
       var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
-      var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
-      $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+      var mce_validator = $("#mc-embedded-subscribe-form-news").validate(options);
+      $("#mc-embedded-subscribe-form-news").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
       options = { url: 'http://d-2a.us3.list-manage.com/subscribe/post-json?u=15771c1be9dd09bf01af1478f&id=2df5c8ab67&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
                     beforeSubmit: function(){
                         $('#mce_tmp_error_msg').remove();
@@ -285,17 +284,17 @@ function mce_init_form2(){
                                             bday = true;
                                             fields[2] = {'value':1970};//trick birthdays into having years
                                         }
-                                    	if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
-                                    		this.value = '';
-									    } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
-                                    		this.value = '';
-									    } else {
-									        if (/\[day\]/.test(fields[0].name)){
-    	                                        this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;									        
-									        } else {
-    	                                        this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
-	                                        }
-	                                    }
+                                        if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+                                          this.value = '';
+                                        } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+                                          this.value = '';
+                                        } else {
+                                          if (/\[day\]/.test(fields[0].name)){
+                                            this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;
+                                          } else {
+                                            this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+                                          }
+                                        }
                                     });
                             });
                         $('.phonefield-us','#mc_embed_signup_news').each(
@@ -310,19 +309,19 @@ function mce_init_form2(){
                                 $(':hidden', this).each(
                                     function(){
                                         if ( fields[0].value.length != 3 || fields[1].value.length!=3 || fields[2].value.length!=4 ){
-                                    		this.value = '';
-									    } else {
-									        this.value = 'filled';
-	                                    }
+                                          this.value = '';
+                                        } else {
+                                          this.value = 'filled';
+                                        }
                                     });
                             });
                         return mce_validator.form();
-                    }, 
+                    },
                     success: mce_success_cb2
                 };
-      $('#mc-embedded-subscribe-form').ajaxForm(options);
-      
-      
+      $('#mc-embedded-subscribe-form-news').ajaxForm(options);
+
+
     });
 }
 function mce_success_cb2(resp){
@@ -331,7 +330,7 @@ function mce_success_cb2(resp){
     if (resp.result=="success"){
         $('#mce-'+resp.result+'-response').show();
         $('#mce-'+resp.result+'-response').html(resp.msg);
-        $('#mc-embedded-subscribe-form').each(function(){
+        $('#mc-embedded-subscribe-form-news').each(function(){
             this.reset();
     	});
     } else {
@@ -358,11 +357,11 @@ function mce_success_cb2(resp){
         try{
             if (index== -1){
                 $('#mce-'+resp.result+'-response').show();
-                $('#mce-'+resp.result+'-response').html(msg);            
+                $('#mce-'+resp.result+'-response').html(msg);
             } else {
                 err_id = 'mce_tmp_error_msg';
                 html = '<div id="'+err_id+'" style="'+err_style2+'"> '+msg+'</div>';
-                
+
                 var input_id = '#mc_embed_signup_news';
                 var f = $(input_id);
                 if (ftypes2[index]=='address'){
