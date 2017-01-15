@@ -1,0 +1,32 @@
+body {
+  color: #000000;
+  background-color: #ffffff;
+  font-family: sans-serif;
+}
+
+a:link, a:hover, a:active {
+  color: #cc0000;
+}
+
+a:visited {
+  color: #cc6666;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+header, main, footer {
+  width: 300px;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 10rem;
+  font-size: 0.8em;
+}
+
+#logo {
+  margin-bottom: 2rem;
+}
